@@ -59,4 +59,60 @@ Would you like to learn more about either of these roles? Just type the number.<
 2. AI Research Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
 </category>
+<!-- Software Development Path Responses -->
+<category>
+    <pattern>1</pattern>
+    <that>* SOFTWARE DEVELOPER * FULL STACK ENGINEER *</that>
+    <template>A Software Developer creates computer applications, writing and testing code to ensure functionality. 
+
+Key skills needed:
+- Programming languages (Java, Python, C++, etc.)
+- Problem-solving abilities
+- Analytical thinking
+- Collaboration skills
+
+Average salary range: $70,000 - $120,000
+
+Would you like to:
+1. Learn about Full Stack Engineer instead
+2. Go back to main interests
+3. End chat</template>
+</category>
+
+<category>
+    <pattern>2</pattern>
+    <that>* SOFTWARE DEVELOPER * FULL STACK ENGINEER *</that>
+    <template>A Full Stack Engineer works on both front-end and back-end development, handling all layers of software development.
+
+Key skills needed:
+- Front-end technologies (HTML, CSS, JavaScript)
+- Back-end programming
+- Database management
+- API development
+
+Average salary range: $80,000 - $130,000
+
+Would you like to:
+1. Learn about Software Developer instead
+2. Go back to main interests
+3. End chat</template>
+</category>
+
+<!-- Navigation Options -->
+<category>
+    <pattern>2</pattern>
+    <that>* GO BACK TO MAIN INTERESTS * END CHAT</that>
+    <template>Great! Let's start by understanding your interests. Are you more interested in:
+1. Building things and solving problems
+2. Working with data and analytics
+3. Designing user experiences
+4. Managing systems and security
+5. Working with artificial intelligence</template>
+</category>
+
+<category>
+    <pattern>3</pattern>
+    <that>* GO BACK TO MAIN INTERESTS * END CHAT</that>
+    <template>Thanks for chatting! Feel free to come back if you need more career guidance. Goodbye!</template>
+</category>
 </aiml>
