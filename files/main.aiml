@@ -1,4 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options?</template>
+    </category>
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>YES</pattern>
+        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <template>Great! Let's start by understanding your interests. Are you more interested in:
+1. Building things and solving problems
+2. Working with data and analytics
+3. Designing user experiences
+4. Managing systems and security
+5. Working with artificial intelligence</template>
+    </category>
+
+    <category>
+    <pattern>1</pattern>
+    <that>* ARE YOU MORE INTERESTED IN</that>
+    <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
+1. Software Developer
+2. Full Stack Engineer
+Would you like to learn more about either of these roles? Just type the number.</template>
+</category>
+<category>
+    <pattern>2</pattern>
+    <that>* ARE YOU MORE INTERESTED IN</that>
+    <template>A focus on data and analytics opens up some exciting careers! You might be interested in:
+1. Data Scientist
+2. Business Intelligence Analyst
+Would you like to learn more about either of these roles? Just type the number.</template>
+</category>
+<category>
+    <pattern>3</pattern>
+    <that>* ARE YOU MORE INTERESTED IN</that>
+    <template>User experience is crucial in modern tech! You might enjoy roles like:
+1. UX Developer
+2. Front-End Engineer
+Would you like to learn more about either of these roles? Just type the number.</template>
+</category>
+<category>
+    <pattern>4</pattern>
+    <that>* ARE YOU MORE INTERESTED IN</that>
+    <template>Systems and security are vital fields! Consider these roles:
+1. Systems Administrator
+2. Security Engineer
+Would you like to learn more about either of these roles? Just type the number.</template>
+</category>
+<category>
+    <pattern>5</pattern>
+    <that>* ARE YOU MORE INTERESTED IN</that>
+    <template>AI is an exciting and growing field! You might be interested in:
+1. Machine Learning Engineer
+2. AI Research Engineer
+Would you like to learn more about either of these roles? Just type the number.</template>
+</category>
 </aiml>
