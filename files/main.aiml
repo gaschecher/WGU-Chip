@@ -23,45 +23,98 @@
 5. Working with artificial intelligence</template>
     </category>
 
-    <!-- Interest Selection Responses - all numbers -->
+    <!-- First level selections (1-5) -->
     <category>
         <pattern>1</pattern>
         <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
-1. Software Developer
-2. Full Stack Engineer
+6. Software Developer
+7. Full Stack Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
     </category>
 
     <category>
         <pattern>2</pattern>
         <template>A focus on data and analytics opens up some exciting careers! You might be interested in:
-1. Data Scientist
-2. Business Intelligence Analyst
+8. Data Scientist
+9. Business Intelligence Analyst
 Would you like to learn more about either of these roles? Just type the number.</template>
     </category>
 
     <category>
         <pattern>3</pattern>
         <template>User experience is crucial in modern tech! You might enjoy roles like:
-1. UX Developer
-2. Front-End Engineer
+10. UX Developer
+11. Front-End Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
     </category>
 
     <category>
         <pattern>4</pattern>
         <template>Systems and security are vital fields! Consider these roles:
-1. Systems Administrator
-2. Security Engineer
+12. Systems Administrator
+13. Security Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
     </category>
 
     <category>
         <pattern>5</pattern>
         <template>AI is an exciting and growing field! You might be interested in:
-1. Machine Learning Engineer
-2. AI Research Engineer
+14. Machine Learning Engineer
+15. AI Research Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
+    </category>
+
+    <!-- Specific Role Information (6-15) -->
+    <category>
+        <pattern>6</pattern>
+        <template>A Software Developer creates computer applications, writing and testing code to ensure functionality.
+
+Key skills needed:
+- Programming languages (Java, Python, C++, etc.)
+- Problem-solving abilities
+- Analytical thinking
+- Collaboration skills
+
+Average salary range: $70,000 - $120,000
+
+Would you like to:
+1. Go back to main menu
+2. End chat</template>
+    </category>
+
+    <category>
+        <pattern>7</pattern>
+        <template>A Full Stack Engineer works on both front-end and back-end development, handling all layers of software development.
+
+Key skills needed:
+- Front-end technologies (HTML, CSS, JavaScript)
+- Back-end programming
+- Database management
+- API development
+
+Average salary range: $80,000 - $130,000
+
+Would you like to:
+1. Go back to main menu
+2. End chat</template>
+    </category>
+
+    <!-- Navigation Options -->
+    <category>
+        <pattern>1</pattern>
+        <that>* 1 GO BACK TO MAIN MENU 2 END CHAT</that>
+        <template>Great! Let's start by understanding your interests. Are you more interested in:
+1. Building things and solving problems
+2. Working with data and analytics
+3. Designing user experiences
+4. Managing systems and security
+5. Working with artificial intelligence</template>
+    </category>
+
+    <category>
+        <pattern>2</pattern>
+        <that>* 1 GO BACK TO MAIN MENU 2 END CHAT</that>
+        <template>Thanks for chatting! Feel free to come back if you need more career guidance. Goodbye!</template>
     </category>
 
     <!-- Default category -->
