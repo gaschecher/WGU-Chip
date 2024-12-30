@@ -14,7 +14,6 @@
     <!-- Start of interest selection -->
     <category>
         <pattern>YES</pattern>
-        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
         <template>
             <think><set name="topic">interest_selection</set></think>
             Great! Let's start by understanding your interests. Are you more interested in:
@@ -22,10 +21,11 @@
 2. Working with data and analytics
 3. Designing user experiences
 4. Managing systems and security
-5. Working with artificial intelligence</template>
+5. Working with artificial intelligence
+            </template>
     </category>
 
-    <!-- Interest Categories -->
+    <!-- Interest Selection -->
     <topic name="interest_selection">
         <category>
             <pattern>1</pattern>
@@ -34,7 +34,8 @@
                 Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
 1. Software Developer
 2. Full Stack Engineer
-Would you like to learn more about either of these roles? Just type the number.</template>
+Would you like to learn more about either of these roles? Just type the number.
+            </template>
         </category>
 
         <category>
@@ -44,13 +45,12 @@ Would you like to learn more about either of these roles? Just type the number.<
                 A focus on data and analytics opens up some exciting careers! You might be interested in:
 1. Data Scientist
 2. Business Intelligence Analyst
-Would you like to learn more about either of these roles? Just type the number.</template>
+Would you like to learn more about either of these roles? Just type the number.
+            </template>
         </category>
-
-        <!-- Other interest options can go here -->
     </topic>
 
-    <!-- Software Development Path -->
+    <!-- Building Path -->
     <topic name="building_path">
         <category>
             <pattern>1</pattern>
@@ -104,7 +104,8 @@ Would you like to:
 2. Working with data and analytics
 3. Designing user experiences
 4. Managing systems and security
-5. Working with artificial intelligence</template>
+5. Working with artificial intelligence
+            </template>
         </category>
 
         <category>
