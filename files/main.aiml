@@ -13,7 +13,7 @@
     <category>
         <pattern>YES</pattern>
         <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
-        <template>Great! Let's start by understanding your interests. Are you more interested in:
+        <template>Great! Let's start by understanding your interests. Are you more interested in.
 1. Building things and solving problems
 2. Working with data and analytics
 3. Designing user experiences
