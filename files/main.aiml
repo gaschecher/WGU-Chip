@@ -11,7 +11,7 @@
         <template><srai>HELLO</srai></template>
     </category>
 
-    <!-- YES with exact lowercase that pattern from trace -->
+    <!-- YES with exact lowercase that pattern -->
     <category>
         <pattern>YES</pattern>
         <that>Would you like to learn about CS career options</that>
@@ -23,13 +23,12 @@
 5. Working with artificial intelligence</template>
     </category>
 
-    <!-- Interest Selection Responses -->
+    <!-- Interest Selection Responses - matching just the number -->
     <category>
-        <pattern>1</pattern>
-        <that>1 Building things and solving problems 2 Working with data and analytics 3 Designing user experiences 4 Managing systems and security 5 Working with artificial intelligence</that>
-        <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
-1. Software Developer
-2. Full Stack Engineer
+        <pattern>2</pattern>
+        <template>A focus on data and analytics opens up some exciting careers! You might be interested in:
+1. Data Scientist
+2. Business Intelligence Analyst
 Would you like to learn more about either of these roles? Just type the number.</template>
     </category>
 
