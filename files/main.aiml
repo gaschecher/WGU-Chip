@@ -11,10 +11,10 @@
         <template><srai>HELLO</srai></template>
     </category>
 
-    <!-- YES with full that pattern -->
+    <!-- YES with exact lowercase that pattern from trace -->
     <category>
         <pattern>YES</pattern>
-        <that>HI I AM CHIP YOUR COMPUTER SCIENCE CAREER ADVISOR I CAN HELP YOU EXPLORE DIFFERENT CS CAREER PATHS BASED ON YOUR INTERESTS AND STRENGTHS WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <that>Would you like to learn about CS career options</that>
         <template>Great! Let's start by understanding your interests. Are you more interested in:
 1. Building things and solving problems
 2. Working with data and analytics
