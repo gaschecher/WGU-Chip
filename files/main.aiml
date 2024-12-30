@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+    <!-- Auto-display welcome message on connect -->
+    <category>
+        <pattern>CONNECT</pattern>
+        <template>👋 Welcome to CS Career Explorer! 
+
+I'm Chip, your friendly computer science career advisor. I can help you discover exciting career paths in tech based on your interests and strengths.
+
+Just type anything to start exploring, or type 'options' to see what I can do!</template>
+    </category>
+
     <!-- Initial Greetings - Adding more variations -->
     <category>
         <pattern>HELLO</pattern>
