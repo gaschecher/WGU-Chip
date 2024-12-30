@@ -29,7 +29,8 @@
         <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
 6. Software Developer
 7. Full Stack Engineer
-Would you like to learn more about either of these roles? Just type the number.</template>
+Would you like to learn more about either of these roles? Just type the number. 
+(Type 'back' to return to main menu or 'bye' to end chat)</template>
     </category>
 
     <category>
@@ -37,7 +38,8 @@ Would you like to learn more about either of these roles? Just type the number.<
         <template>A focus on data and analytics opens up some exciting careers! You might be interested in:
 8. Data Scientist
 9. Business Intelligence Analyst
-Would you like to learn more about either of these roles? Just type the number.</template>
+Would you like to learn more about either of these roles? Just type the number.
+(Type 'back' to return to main menu or 'bye' to end chat)</template>
     </category>
 
     <category>
@@ -45,7 +47,8 @@ Would you like to learn more about either of these roles? Just type the number.<
         <template>User experience is crucial in modern tech! You might enjoy roles like:
 10. UX Developer
 11. Front-End Engineer
-Would you like to learn more about either of these roles? Just type the number.</template>
+Would you like to learn more about either of these roles? Just type the number.
+(Type 'back' to return to main menu or 'bye' to end chat)</template>
     </category>
 
     <category>
@@ -53,7 +56,8 @@ Would you like to learn more about either of these roles? Just type the number.<
         <template>Systems and security are vital fields! Consider these roles:
 12. Systems Administrator
 13. Security Engineer
-Would you like to learn more about either of these roles? Just type the number.</template>
+Would you like to learn more about either of these roles? Just type the number.
+(Type 'back' to return to main menu or 'bye' to end chat)</template>
     </category>
 
     <category>
@@ -61,7 +65,8 @@ Would you like to learn more about either of these roles? Just type the number.<
         <template>AI is an exciting and growing field! You might be interested in:
 14. Machine Learning Engineer
 15. AI Research Engineer
-Would you like to learn more about either of these roles? Just type the number.</template>
+Would you like to learn more about either of these roles? Just type the number.
+(Type 'back' to return to main menu or 'bye' to end chat)</template>
     </category>
 
     <!-- Specific Role Information (6-15) -->
@@ -77,9 +82,7 @@ Key skills needed:
 
 Average salary range: $70,000 - $120,000
 
-Would you like to:
-1. Go back to main menu
-2. End chat</template>
+Type 'back' to return to main menu or 'bye' to end chat</template>
     </category>
 
     <category>
@@ -94,15 +97,12 @@ Key skills needed:
 
 Average salary range: $80,000 - $130,000
 
-Would you like to:
-1. Go back to main menu
-2. End chat</template>
+Type 'back' to return to main menu or 'bye' to end chat</template>
     </category>
 
-    <!-- Navigation Options -->
+    <!-- Navigation Keywords -->
     <category>
-        <pattern>1</pattern>
-        <that>* 1 GO BACK TO MAIN MENU 2 END CHAT</that>
+        <pattern>BACK</pattern>
         <template>Great! Let's start by understanding your interests. Are you more interested in:
 1. Building things and solving problems
 2. Working with data and analytics
@@ -112,9 +112,24 @@ Would you like to:
     </category>
 
     <category>
-        <pattern>2</pattern>
-        <that>* 1 GO BACK TO MAIN MENU 2 END CHAT</that>
+        <pattern>BYE</pattern>
         <template>Thanks for chatting! Feel free to come back if you need more career guidance. Goodbye!</template>
+    </category>
+
+    <!-- Add variations of bye -->
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template><srai>BYE</srai></template>
+    </category>
+
+    <category>
+        <pattern>EXIT</pattern>
+        <template><srai>BYE</srai></template>
+    </category>
+
+    <category>
+        <pattern>QUIT</pattern>
+        <template><srai>BYE</srai></template>
     </category>
 
     <!-- Default category -->
