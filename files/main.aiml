@@ -23,6 +23,16 @@
 5. Working with artificial intelligence</template>
     </category>
 
+    <!-- Interest Selection Responses -->
+    <category>
+        <pattern>1</pattern>
+        <that>1 Building things and solving problems 2 Working with data and analytics 3 Designing user experiences 4 Managing systems and security 5 Working with artificial intelligence</that>
+        <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
+1. Software Developer
+2. Full Stack Engineer
+Would you like to learn more about either of these roles? Just type the number.</template>
+    </category>
+
     <!-- Default category -->
     <category>
         <pattern>*</pattern>
