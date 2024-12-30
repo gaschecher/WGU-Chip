@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <!-- Initial Greetings -->
+    <!-- Initial Greetings - Adding more variations -->
     <category>
         <pattern>HELLO</pattern>
         <template>Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options?</template>
@@ -11,7 +11,27 @@
         <template><srai>HELLO</srai></template>
     </category>
 
-    <!-- YES with exact lowercase that pattern -->
+    <category>
+        <pattern>HEY</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>YO</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>HOLA</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>SUP</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <!-- Initial question responses -->
     <category>
         <pattern>YES</pattern>
         <that>Would you like to learn about CS career options</that>
@@ -21,6 +41,125 @@
 3. Designing user experiences
 4. Managing systems and security
 5. Working with artificial intelligence</template>
+    </category>
+
+    <!-- YES variations -->
+    <category>
+        <pattern>YEAH</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>YES</srai></template>
+    </category>
+
+    <category>
+        <pattern>YEP</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>YES</srai></template>
+    </category>
+
+    <category>
+        <pattern>SURE</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>YES</srai></template>
+    </category>
+
+    <category>
+        <pattern>OK</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>YES</srai></template>
+    </category>
+
+    <category>
+        <pattern>OKAY</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>YES</srai></template>
+    </category>
+
+    <!-- NO variations -->
+    <category>
+        <pattern>NO</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template>Well, I guess you're not a bit interested in tech careers! 😄 But hey, if you change your mind and want to escape the life of a digital nomad, just say 'hi' to start over. Who knows, maybe you'll find your inner geek!</template>
+    </category>
+
+    <category>
+        <pattern>NAH</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>NO</srai></template>
+    </category>
+
+    <category>
+        <pattern>NOPE</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>NO</srai></template>
+    </category>
+
+    <!-- MAYBE variations -->
+    <category>
+        <pattern>MAYBE</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template>Ah, sitting on the fence, are we? As a computer would say: there are 10 types of people in the world - those who can decide, and those who are still buffering! 😄 When you're done loading, just say 'hi' to explore your tech destiny!</template>
+    </category>
+
+    <category>
+        <pattern>NOT SURE</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>MAYBE</srai></template>
+    </category>
+
+    <category>
+        <pattern>I DON T KNOW</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>MAYBE</srai></template>
+    </category>
+
+    <category>
+        <pattern>IDK</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>MAYBE</srai></template>
+    </category>
+
+    <category>
+        <pattern>POSSIBLY</pattern>
+        <that>Would you like to learn about CS career options</that>
+        <template><srai>MAYBE</srai></template>
+    </category>
+
+    <!-- Help-related responses -->
+    <category>
+        <pattern>HELP</pattern>
+        <template>I'm here to help you explore CS career paths! Just say 'hi' to start over, or type 'options' to see what I can do.</template>
+    </category>
+
+    <category>
+        <pattern>OPTIONS</pattern>
+        <template>Here's what you can do:
+- Say 'hi' to start exploring CS careers
+- Type 'back' to return to the main menu
+- Type 'bye' to end our chat
+- Type 'help' to see these options again
+What would you like to do?</template>
+    </category>
+
+    <!-- Invalid number handling -->
+    <category>
+        <pattern>16</pattern>
+        <template>Oops! That number isn't in my database. Please choose a number from the options I've shown, or type 'back' to see the main menu again.</template>
+    </category>
+
+    <category>
+        <pattern>0</pattern>
+        <template>Let's start counting from 1! Please choose a number from the options I've shown, or type 'back' to see the main menu again.</template>
+    </category>
+
+    <!-- Frustrated user handling -->
+    <category>
+        <pattern>THIS IS STUPID</pattern>
+        <template>I understand this might be frustrating. Would you like to start over with 'hi', or should we say 'bye' for now?</template>
+    </category>
+
+    <category>
+        <pattern>THIS SUCKS</pattern>
+        <template><srai>THIS IS STUPID</srai></template>
     </category>
 
     <!-- First level selections (1-5) -->
