@@ -4,10 +4,12 @@
         <pattern>HELLO</pattern>
         <template>Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options?</template>
     </category>
+
     <category>
         <pattern>HI</pattern>
         <template><srai>HELLO</srai></template>
     </category>
+
     <category>
         <pattern>YES</pattern>
         <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
@@ -19,51 +21,57 @@
 5. Working with artificial intelligence</template>
     </category>
 
+    <!-- Initial Interest Categories -->
     <category>
-    <pattern>1</pattern>
-    <that>* ARE YOU MORE INTERESTED IN</that>
-    <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
+        <pattern>1</pattern>
+        <that>* ARE YOU MORE INTERESTED IN *</that>
+        <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
 1. Software Developer
 2. Full Stack Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
-</category>
-<category>
-    <pattern>2</pattern>
-    <that>* ARE YOU MORE INTERESTED IN</that>
-    <template>A focus on data and analytics opens up some exciting careers! You might be interested in:
+    </category>
+
+    <category>
+        <pattern>2</pattern>
+        <that>* ARE YOU MORE INTERESTED IN *</that>
+        <template>A focus on data and analytics opens up some exciting careers! You might be interested in:
 1. Data Scientist
 2. Business Intelligence Analyst
 Would you like to learn more about either of these roles? Just type the number.</template>
-</category>
-<category>
-    <pattern>3</pattern>
-    <that>* ARE YOU MORE INTERESTED IN</that>
-    <template>User experience is crucial in modern tech! You might enjoy roles like:
+    </category>
+
+    <category>
+        <pattern>3</pattern>
+        <that>* ARE YOU MORE INTERESTED IN *</that>
+        <template>User experience is crucial in modern tech! You might enjoy roles like:
 1. UX Developer
 2. Front-End Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
-</category>
-<category>
-    <pattern>4</pattern>
-    <that>* ARE YOU MORE INTERESTED IN</that>
-    <template>Systems and security are vital fields! Consider these roles:
+    </category>
+
+    <category>
+        <pattern>4</pattern>
+        <that>* ARE YOU MORE INTERESTED IN *</that>
+        <template>Systems and security are vital fields! Consider these roles:
 1. Systems Administrator
 2. Security Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
-</category>
-<category>
-    <pattern>5</pattern>
-    <that>* ARE YOU MORE INTERESTED IN</that>
-    <template>AI is an exciting and growing field! You might be interested in:
+    </category>
+
+    <category>
+        <pattern>5</pattern>
+        <that>* ARE YOU MORE INTERESTED IN *</that>
+        <template>AI is an exciting and growing field! You might be interested in:
 1. Machine Learning Engineer
 2. AI Research Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
-</category>
-<!-- Software Development Path Responses -->
-<category>
-    <pattern>1</pattern>
-    <that>* SOFTWARE DEVELOPER * FULL STACK ENGINEER *</that>
-    <template>A Software Developer creates computer applications, writing and testing code to ensure functionality. 
+    </category>
+
+    <!-- Software Development Path Responses -->
+    <category>
+        <pattern>1</pattern>
+        <that>* WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A Software Developer creates computer applications, writing and testing code to ensure functionality. 
 
 Key skills needed:
 - Programming languages (Java, Python, C++, etc.)
@@ -77,12 +85,12 @@ Would you like to:
 1. Learn about Full Stack Engineer instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<category>
-    <pattern>2</pattern>
-    <that>* SOFTWARE DEVELOPER * FULL STACK ENGINEER *</that>
-    <template>A Full Stack Engineer works on both front-end and back-end development, handling all layers of software development.
+    <category>
+        <pattern>2</pattern>
+        <that>* WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A Full Stack Engineer works on both front-end and back-end development, handling all layers of software development.
 
 Key skills needed:
 - Front-end technologies (HTML, CSS, JavaScript)
@@ -96,31 +104,31 @@ Would you like to:
 1. Learn about Software Developer instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<!-- Navigation Options -->
-<category>
-    <pattern>2</pattern>
-    <that>* GO BACK TO MAIN INTERESTS * END CHAT</that>
-    <template>Great! Let's start by understanding your interests. Are you more interested in:
+    <!-- Navigation Options -->
+    <category>
+        <pattern>2</pattern>
+        <that>* WOULD YOU LIKE TO * GO BACK TO MAIN INTERESTS * END CHAT</that>
+        <template>Great! Let's start by understanding your interests. Are you more interested in:
 1. Building things and solving problems
 2. Working with data and analytics
 3. Designing user experiences
 4. Managing systems and security
 5. Working with artificial intelligence</template>
-</category>
+    </category>
 
-<category>
-    <pattern>3</pattern>
-    <that>* GO BACK TO MAIN INTERESTS * END CHAT</that>
-    <template>Thanks for chatting! Feel free to come back if you need more career guidance. Goodbye!</template>
-</category>
+    <category>
+        <pattern>3</pattern>
+        <that>* WOULD YOU LIKE TO * GO BACK TO MAIN INTERESTS * END CHAT</that>
+        <template>Thanks for chatting! Feel free to come back if you need more career guidance. Goodbye!</template>
+    </category>
 
-<!-- Data Analytics Path Responses -->
-<category>
-    <pattern>1</pattern>
-    <that>* DATA SCIENTIST * BUSINESS INTELLIGENCE ANALYST *</that>
-    <template>A Data Scientist analyzes complex data to help organizations make informed decisions.
+    <!-- Data Analytics Path Responses -->
+    <category>
+        <pattern>1</pattern>
+        <that>* DATA SCIENTIST * BUSINESS INTELLIGENCE ANALYST * WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A Data Scientist analyzes complex data to help organizations make informed decisions.
 
 Key skills needed:
 - Statistical analysis
@@ -134,12 +142,12 @@ Would you like to:
 1. Learn about Business Intelligence Analyst instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<category>
-    <pattern>2</pattern>
-    <that>* DATA SCIENTIST * BUSINESS INTELLIGENCE ANALYST *</that>
-    <template>A Business Intelligence Analyst transforms data into insights that drive business strategy.
+    <category>
+        <pattern>2</pattern>
+        <that>* DATA SCIENTIST * BUSINESS INTELLIGENCE ANALYST * WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A Business Intelligence Analyst transforms data into insights that drive business strategy.
 
 Key skills needed:
 - SQL and database knowledge
@@ -153,13 +161,13 @@ Would you like to:
 1. Learn about Data Scientist instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<!-- UX/Front-End Path Responses -->
-<category>
-    <pattern>1</pattern>
-    <that>* UX DEVELOPER * FRONT END ENGINEER *</that>
-    <template>A UX Developer combines design principles with technical skills to create user-friendly interfaces.
+    <!-- UX/Front-End Path Responses -->
+    <category>
+        <pattern>1</pattern>
+        <that>* UX DEVELOPER * FRONT-END ENGINEER * WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A UX Developer combines design principles with technical skills to create user-friendly interfaces.
 
 Key skills needed:
 - UI/UX design principles
@@ -173,12 +181,12 @@ Would you like to:
 1. Learn about Front-End Engineer instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<category>
-    <pattern>2</pattern>
-    <that>* UX DEVELOPER * FRONT END ENGINEER *</that>
-    <template>A Front-End Engineer specializes in creating the user interface and experience of websites and applications.
+    <category>
+        <pattern>2</pattern>
+        <that>* UX DEVELOPER * FRONT-END ENGINEER * WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A Front-End Engineer specializes in creating the user interface and experience of websites and applications.
 
 Key skills needed:
 - Advanced JavaScript
@@ -192,12 +200,13 @@ Would you like to:
 1. Learn about UX Developer instead
 2. Go back to main interests
 3. End chat</template>
-</category>
-<!-- Systems and Security Path Responses -->
-<category>
-    <pattern>1</pattern>
-    <that>* SYSTEMS ADMINISTRATOR * SECURITY ENGINEER *</that>
-    <template>A Systems Administrator manages and maintains computer systems and networks.
+    </category>
+
+    <!-- Systems and Security Path Responses -->
+    <category>
+        <pattern>1</pattern>
+        <that>* SYSTEMS ADMINISTRATOR * SECURITY ENGINEER * WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A Systems Administrator manages and maintains computer systems and networks.
 
 Key skills needed:
 - Network administration
@@ -211,12 +220,12 @@ Would you like to:
 1. Learn about Security Engineer instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<category>
-    <pattern>2</pattern>
-    <that>* SYSTEMS ADMINISTRATOR * SECURITY ENGINEER *</that>
-    <template>A Security Engineer protects organizations from cyber threats and implements security measures.
+    <category>
+        <pattern>2</pattern>
+        <that>* SYSTEMS ADMINISTRATOR * SECURITY ENGINEER * WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A Security Engineer protects organizations from cyber threats and implements security measures.
 
 Key skills needed:
 - Cybersecurity tools and practices
@@ -230,13 +239,13 @@ Would you like to:
 1. Learn about Systems Administrator instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<!-- AI/Machine Learning Path Responses -->
-<category>
-    <pattern>1</pattern>
-    <that>* MACHINE LEARNING ENGINEER * AI RESEARCH ENGINEER *</that>
-    <template>A Machine Learning Engineer develops AI systems and algorithms that can learn and make predictions.
+    <!-- AI/Machine Learning Path Responses -->
+    <category>
+        <pattern>1</pattern>
+        <that>* MACHINE LEARNING ENGINEER * AI RESEARCH ENGINEER * WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>A Machine Learning Engineer develops AI systems and algorithms that can learn and make predictions.
 
 Key skills needed:
 - Advanced mathematics
@@ -250,12 +259,12 @@ Would you like to:
 1. Learn about AI Research Engineer instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<category>
-    <pattern>2</pattern>
-    <that>* MACHINE LEARNING ENGINEER * AI RESEARCH ENGINEER *</that>
-    <template>An AI Research Engineer advances the field of artificial intelligence through innovative research and development.
+    <category>
+        <pattern>2</pattern>
+        <that>* MACHINE LEARNING ENGINEER * AI RESEARCH ENGINEER * WOULD YOU LIKE TO LEARN MORE ABOUT EITHER OF THESE ROLES *</that>
+        <template>An AI Research Engineer advances the field of artificial intelligence through innovative research and development.
 
 Key skills needed:
 - Advanced AI/ML theory
@@ -269,21 +278,32 @@ Would you like to:
 1. Learn about Machine Learning Engineer instead
 2. Go back to main interests
 3. End chat</template>
-</category>
+    </category>
 
-<!-- Additional General Responses -->
-<category>
-    <pattern>NO</pattern>
-    <template>No problem! Feel free to come back when you'd like to explore CS career options. Goodbye!</template>
-</category>
+    <!-- Additional General Responses -->
+    <category>
+        <pattern>NO</pattern>
+        <template>No problem! Feel free to come back when you'd like to explore CS career options. Goodbye!</template>
+    </category>
 
-<category>
-    <pattern>BYE</pattern>
-    <template>Goodbye! Good luck with your career exploration!</template>
-</category>
+    <category>
+        <pattern>BYE</pattern>
+        <template>Goodbye! Good luck with your career exploration!</template>
+    </category>
 
-<category>
-    <pattern>THANK YOU</pattern>
-    <template>You're welcome! Good luck with your career journey!</template>
-</category>
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>You're welcome! Good luck with your career journey!</template>
+    </category>
+
+    <!-- Default Category -->
+    <category>
+        <pattern>*</pattern>
+        <template>I'm not sure how to respond to that. Let's go back to the main menu:
+1. Building things and solving problems
+2. Working with data and analytics
+3. Designing user experiences
+4. Managing systems and security
+5. Working with artificial intelligence</template>
+    </category>
 </aiml>
