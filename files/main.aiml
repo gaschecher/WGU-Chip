@@ -23,12 +23,44 @@
 5. Working with artificial intelligence</template>
     </category>
 
-    <!-- Interest Selection Responses - matching just the number -->
+    <!-- Interest Selection Responses - all numbers -->
+    <category>
+        <pattern>1</pattern>
+        <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
+1. Software Developer
+2. Full Stack Engineer
+Would you like to learn more about either of these roles? Just type the number.</template>
+    </category>
+
     <category>
         <pattern>2</pattern>
         <template>A focus on data and analytics opens up some exciting careers! You might be interested in:
 1. Data Scientist
 2. Business Intelligence Analyst
+Would you like to learn more about either of these roles? Just type the number.</template>
+    </category>
+
+    <category>
+        <pattern>3</pattern>
+        <template>User experience is crucial in modern tech! You might enjoy roles like:
+1. UX Developer
+2. Front-End Engineer
+Would you like to learn more about either of these roles? Just type the number.</template>
+    </category>
+
+    <category>
+        <pattern>4</pattern>
+        <template>Systems and security are vital fields! Consider these roles:
+1. Systems Administrator
+2. Security Engineer
+Would you like to learn more about either of these roles? Just type the number.</template>
+    </category>
+
+    <category>
+        <pattern>5</pattern>
+        <template>AI is an exciting and growing field! You might be interested in:
+1. Machine Learning Engineer
+2. AI Research Engineer
 Would you like to learn more about either of these roles? Just type the number.</template>
     </category>
 
