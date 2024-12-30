@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <!-- Initial greetings -->
+    <!-- Initial Greetings -->
     <category>
         <pattern>HELLO</pattern>
         <template>Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options?</template>
@@ -11,7 +11,7 @@
         <template><srai>HELLO</srai></template>
     </category>
 
-    <!-- Start of interest selection -->
+    <!-- Interest Selection -->
     <category>
         <pattern>YES</pattern>
         <template>
@@ -25,7 +25,7 @@
             </template>
     </category>
 
-    <!-- Interest Selection -->
+    <!-- Interest Options -->
     <topic name="interest_selection">
         <category>
             <pattern>1</pattern>
@@ -46,6 +46,19 @@ Would you like to learn more about either of these roles? Just type the number.
 1. Data Scientist
 2. Business Intelligence Analyst
 Would you like to learn more about either of these roles? Just type the number.
+            </template>
+        </category>
+
+        <!-- Fallback for Unexpected Inputs -->
+        <category>
+            <pattern>*</pattern>
+            <template>
+                I'm not sure I understood that. Please choose:
+1. Building things and solving problems
+2. Working with data and analytics
+3. Designing user experiences
+4. Managing systems and security
+5. Working with artificial intelligence
             </template>
         </category>
     </topic>
@@ -91,9 +104,20 @@ Would you like to:
 3. End chat
             </template>
         </category>
+
+        <!-- Fallback for Unexpected Inputs -->
+        <category>
+            <pattern>*</pattern>
+            <template>
+                I didn't quite catch that. Please choose:
+1. Learn about Software Developer
+2. Go back to main menu
+3. End chat
+            </template>
+        </category>
     </topic>
 
-    <!-- Return to Main Menu -->
+    <!-- Navigation Options -->
     <topic name="*">
         <category>
             <pattern>2</pattern>
