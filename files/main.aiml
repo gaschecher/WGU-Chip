@@ -10,12 +10,13 @@ I'm Chip, your friendly computer science career advisor. I can help you discover
 Just type anything to start exploring, or type 'options' to see what I can do!</template>
     </category>
 
-    <!-- Initial Greetings - Adding more variations -->
+    <!-- Initial Greetings -->
     <category>
         <pattern>HELLO</pattern>
         <template>Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options?</template>
     </category>
 
+    <!-- Greeting variations -->
     <category>
         <pattern>HI</pattern>
         <template><srai>HELLO</srai></template>
@@ -45,12 +46,15 @@ Just type anything to start exploring, or type 'options' to see what I can do!</
     <category>
         <pattern>YES</pattern>
         <that>Would you like to learn about CS career options</that>
-        <template>Great! Let's start by understanding your interests. Are you more interested in:
-1. Building things and solving problems
-2. Working with data and analytics
-3. Designing user experiences
-4. Managing systems and security
-5. Working with artificial intelligence</template>
+        <template>Great! Let's start by understanding your work style. Which statement do you most identify with?
+
+1. "I prefer following established processes and enjoy building things step by step"
+2. "I'm detail-oriented and find satisfaction in discovering patterns others might miss"
+3. "I often notice design flaws in everyday things and think about how to improve them"
+4. "I like following rules and ensuring everything is done properly and securely"
+5. "I enjoy exploring new concepts and pushing boundaries in my work"
+
+Just type the number of the statement that best describes you!</template>
     </category>
 
     <!-- YES variations -->
@@ -175,83 +179,70 @@ What would you like to do?</template>
     <!-- First level selections (1-5) -->
     <category>
         <pattern>1</pattern>
-        <template>Building things and problem solving is a great foundation! Based on this interest, you might be well-suited for roles like:
-6. Software Developer
-7. Full Stack Engineer
-Would you like to learn more about either of these roles? Just type the number. 
-(Type 'back' to return to main menu or 'bye' to end chat)</template>
+        <template>Perfect! For someone who likes working with established technologies, there are two excellent paths. Which interests you more?
+
+A. "Creating applications and solving complex programming challenges"
+B. "Automating deployment processes and managing development infrastructure"
+
+Type A or B to learn more about the matching career!</template>
     </category>
 
     <category>
         <pattern>2</pattern>
-        <template>A focus on data and analytics opens up some exciting careers! You might be interested in:
-8. Data Scientist
-9. Business Intelligence Analyst
-Would you like to learn more about either of these roles? Just type the number.
-(Type 'back' to return to main menu or 'bye' to end chat)</template>
+        <template>Excellent! For someone who enjoys working with data, there are two exciting paths. Which interests you more?
+
+A. "Using advanced statistical methods to find deep insights"
+B. "Translating data into actionable business strategies"
+
+Type A or B to learn more about the matching career!</template>
     </category>
 
     <category>
         <pattern>3</pattern>
-        <template>User experience is crucial in modern tech! You might enjoy roles like:
-10. UX Developer
-11. Front-End Engineer
-Would you like to learn more about either of these roles? Just type the number.
-(Type 'back' to return to main menu or 'bye' to end chat)</template>
+        <template>Great choice! For someone passionate about user experience, there are two valuable paths. Which interests you more?
+
+A. "Creating intuitive, user-friendly experiences"
+B. "Building polished, responsive interfaces"
+
+Type A or B to learn more about the matching career!</template>
     </category>
 
     <category>
         <pattern>4</pattern>
-        <template>Systems and security are vital fields! Consider these roles:
-12. Systems Administrator
-13. Security Engineer
-Would you like to learn more about either of these roles? Just type the number.
-(Type 'back' to return to main menu or 'bye' to end chat)</template>
+        <template>Perfect! For someone who's detail-oriented and methodical, there are two important paths. Which interests you more?
+
+A. "Managing and maintaining critical systems"
+B. "Protecting against and responding to security threats"
+
+Type A or B to learn more about the matching career!</template>
     </category>
 
     <category>
         <pattern>5</pattern>
-        <template>AI is an exciting and growing field! You might be interested in:
-14. Machine Learning Engineer
-15. AI Research Engineer
-Would you like to learn more about either of these roles? Just type the number.
-(Type 'back' to return to main menu or 'bye' to end chat)</template>
+        <template>Exciting! For someone interested in cutting-edge technology, there are two innovative paths. Which interests you more?
+
+A. "Building and training AI systems to solve complex problems"
+B. "Developing intelligent algorithms and neural network architectures"
+
+Type A or B to learn more about the matching career!</template>
     </category>
 
-    <!-- Specific Role Information (6-15) -->
+    <!-- Career Recommendations -->
     <category>
-        <pattern>6</pattern>
-        <template>A Software Developer creates computer applications, writing and testing code to ensure functionality.
+        <pattern>A</pattern>
+        <that>Type A or B to learn more about the matching career</that>
+        <template><think><set name="choice"><thatstar/></set></think>
+        <condition name="choice">
+            <li value="1">A Software Engineer creates computer applications, writing and testing code to ensure functionality.
 
 Key skills needed:
-- Programming languages (Java, Python, C++, etc.)
+- Strong programming fundamentals
 - Problem-solving abilities
-- Analytical thinking
-- Collaboration skills
+- Knowledge of software design patterns
+- Testing and debugging expertise
 
-Average salary range: $70,000 - $120,000
-
-Type 'back' to return to main menu or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>7</pattern>
-        <template>A Full Stack Engineer works on both front-end and back-end development, handling all layers of software development.
-
-Key skills needed:
-- Front-end technologies (HTML, CSS, JavaScript)
-- Back-end programming
-- Database management
-- API development
-
-Average salary range: $80,000 - $130,000
-
-Type 'back' to return to main menu or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>8</pattern>
-        <template>A Data Scientist analyzes complex data sets to help organizations make better decisions.
+Average salary range: $70,000 - $120,000</li>
+            <li value="2">A Data Scientist analyzes complex data sets to help organizations make better decisions.
 
 Key skills needed:
 - Statistical analysis
@@ -260,132 +251,112 @@ Key skills needed:
 - Data visualization
 - SQL
 
-Average salary range: $85,000 - $150,000
-
-Type 'back' to return to main menu or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>9</pattern>
-        <template>A Business Intelligence Analyst transforms data into insights that drive business strategy.
-
-Key skills needed:
-- SQL and database knowledge
-- Data visualization tools (Tableau, Power BI)
-- Business acumen
-- Statistical analysis
-- Communication skills
-
-Average salary range: $65,000 - $110,000
-
-Type 'back' to return to main menu or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>10</pattern>
-        <template>A UX Developer combines design principles with technical skills to create user-friendly interfaces.
+Average salary range: $85,000 - $150,000</li>
+            <li value="3">A UX Developer combines design principles with technical skills to create user-friendly interfaces.
 
 Key skills needed:
 - UI/UX design principles
-- HTML, CSS, JavaScript
-- User research
+- User research methods
 - Prototyping tools
-- Accessibility standards
+- HTML/CSS/JavaScript
+- Accessibility knowledge
 
-Average salary range: $75,000 - $125,000
-
-Type 'back' to return to main menu or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>11</pattern>
-        <template>A Front-End Engineer specializes in creating the user interface and experience of websites and applications.
-
-Key skills needed:
-- HTML, CSS, JavaScript
-- Front-end frameworks (React, Vue, Angular)
-- Responsive design
-- Browser compatibility
-- Performance optimization
-
-Average salary range: $75,000 - $130,000
-
-Type 'back' to return to main menu or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>12</pattern>
-        <template>A Systems Administrator manages and maintains computer systems and networks.
+Average salary range: $75,000 - $125,000</li>
+            <li value="4">A Systems Administrator manages and maintains computer systems and networks.
 
 Key skills needed:
 - Network administration
-- Operating systems (Linux, Windows)
-- Security protocols
-- Troubleshooting
-- Automation scripts
+- Operating systems expertise
+- Security fundamentals
+- Troubleshooting skills
+- Automation capabilities
 
-Average salary range: $60,000 - $110,000
+Average salary range: $60,000 - $110,000</li>
+            <li value="5">A Machine Learning Engineer develops AI systems that can learn and improve from experience.
 
-Type 'back' to return to main menu or 'bye' to end chat</template>
+Key skills needed:
+- Machine learning frameworks
+- Python programming
+- Data processing
+- Model deployment
+- Performance optimization
+
+Average salary range: $100,000 - $170,000</li>
+        </condition>
+
+Type 'back' to explore other paths or 'bye' to end chat</template>
     </category>
 
     <category>
-        <pattern>13</pattern>
-        <template>A Security Engineer protects systems and networks from cyber threats and vulnerabilities.
+        <pattern>B</pattern>
+        <that>Type A or B to learn more about the matching career</that>
+        <template><think><set name="choice"><thatstar/></set></think>
+        <condition name="choice">
+            <li value="1">A DevOps Engineer automates deployment processes and manages development infrastructure.
+
+Key skills needed:
+- Cloud platforms (AWS, Azure)
+- Container technologies
+- Infrastructure as Code
+- Automation tools
+- Scripting languages
+
+Average salary range: $80,000 - $140,000</li>
+            <li value="2">A Business Intelligence Analyst transforms data into insights that drive business strategy.
+
+Key skills needed:
+- SQL and databases
+- BI tools (Tableau, Power BI)
+- Business acumen
+- Data analysis
+- Communication skills
+
+Average salary range: $65,000 - $110,000</li>
+            <li value="3">A Frontend Engineer specializes in creating the user interface and experience of websites and applications.
+
+Key skills needed:
+- HTML/CSS/JavaScript
+- Frontend frameworks
+- Responsive design
+- Performance optimization
+- Browser compatibility
+
+Average salary range: $75,000 - $130,000</li>
+            <li value="4">A Security Engineer protects systems and networks from cyber threats and vulnerabilities.
 
 Key skills needed:
 - Network security
-- Encryption
-- Security tools and protocols
+- Security protocols
+- Penetration testing
 - Incident response
 - Risk assessment
 
-Average salary range: $90,000 - $160,000
-
-Type 'back' to return to main menu or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>14</pattern>
-        <template>A Machine Learning Engineer develops AI systems that can learn and improve from experience.
+Average salary range: $90,000 - $160,000</li>
+            <li value="5">An AI Algorithm Engineer develops new algorithms and optimizes AI architectures.
 
 Key skills needed:
-- Machine learning algorithms
-- Python/R programming
-- Deep learning frameworks
-- Data modeling
-- Mathematics and statistics
+- Advanced AI concepts
+- Algorithm design
+- Mathematics/Statistics
+- Performance optimization
+- Research skills
 
-Average salary range: $100,000 - $170,000
+Average salary range: $110,000 - $180,000</li>
+        </condition>
 
-Type 'back' to return to main menu or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>15</pattern>
-        <template>An AI Research Engineer advances the field of artificial intelligence through innovative research and development.
-
-Key skills needed:
-- Advanced AI/ML concepts
-- Research methodology
-- Programming languages
-- Mathematics and statistics
-- Scientific paper writing
-
-Average salary range: $110,000 - $180,000
-
-Type 'back' to return to main menu or 'bye' to end chat</template>
+Type 'back' to explore other paths or 'bye' to end chat</template>
     </category>
 
     <!-- Navigation Keywords -->
     <category>
         <pattern>BACK</pattern>
-        <template>Great! Let's start by understanding your interests. Are you more interested in:
-1. Building things and solving problems
-2. Working with data and analytics
-3. Designing user experiences
-4. Managing systems and security
-5. Working with artificial intelligence</template>
+        <template>Let's start by understanding your work style. Which statement do you most identify with?
+
+1. "I like working with established technologies and clear documentation"
+2. "I enjoy finding patterns and drawing insights from information"
+3. "I'm passionate about making technology accessible and user-friendly"
+4. "I'm methodical and detail-oriented in protecting systems"
+5. "I like being on the cutting edge of technological innovation"</template>
     </category>
 
     <category>
@@ -414,4 +385,5 @@ Type 'back' to return to main menu or 'bye' to end chat</template>
         <pattern>*</pattern>
         <template>I'm not sure how to respond to that. Please try saying "hi" to start over.</template>
     </category>
+
 </aiml>
