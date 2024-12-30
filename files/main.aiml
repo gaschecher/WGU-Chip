@@ -100,6 +100,134 @@ Average salary range: $80,000 - $130,000
 Type 'back' to return to main menu or 'bye' to end chat</template>
     </category>
 
+    <category>
+        <pattern>8</pattern>
+        <template>A Data Scientist analyzes complex data sets to help organizations make better decisions.
+
+Key skills needed:
+- Statistical analysis
+- Machine learning
+- Python/R programming
+- Data visualization
+- SQL
+
+Average salary range: $85,000 - $150,000
+
+Type 'back' to return to main menu or 'bye' to end chat</template>
+    </category>
+
+    <category>
+        <pattern>9</pattern>
+        <template>A Business Intelligence Analyst transforms data into insights that drive business strategy.
+
+Key skills needed:
+- SQL and database knowledge
+- Data visualization tools (Tableau, Power BI)
+- Business acumen
+- Statistical analysis
+- Communication skills
+
+Average salary range: $65,000 - $110,000
+
+Type 'back' to return to main menu or 'bye' to end chat</template>
+    </category>
+
+    <category>
+        <pattern>10</pattern>
+        <template>A UX Developer combines design principles with technical skills to create user-friendly interfaces.
+
+Key skills needed:
+- UI/UX design principles
+- HTML, CSS, JavaScript
+- User research
+- Prototyping tools
+- Accessibility standards
+
+Average salary range: $75,000 - $125,000
+
+Type 'back' to return to main menu or 'bye' to end chat</template>
+    </category>
+
+    <category>
+        <pattern>11</pattern>
+        <template>A Front-End Engineer specializes in creating the user interface and experience of websites and applications.
+
+Key skills needed:
+- HTML, CSS, JavaScript
+- Front-end frameworks (React, Vue, Angular)
+- Responsive design
+- Browser compatibility
+- Performance optimization
+
+Average salary range: $75,000 - $130,000
+
+Type 'back' to return to main menu or 'bye' to end chat</template>
+    </category>
+
+    <category>
+        <pattern>12</pattern>
+        <template>A Systems Administrator manages and maintains computer systems and networks.
+
+Key skills needed:
+- Network administration
+- Operating systems (Linux, Windows)
+- Security protocols
+- Troubleshooting
+- Automation scripts
+
+Average salary range: $60,000 - $110,000
+
+Type 'back' to return to main menu or 'bye' to end chat</template>
+    </category>
+
+    <category>
+        <pattern>13</pattern>
+        <template>A Security Engineer protects systems and networks from cyber threats and vulnerabilities.
+
+Key skills needed:
+- Network security
+- Encryption
+- Security tools and protocols
+- Incident response
+- Risk assessment
+
+Average salary range: $90,000 - $160,000
+
+Type 'back' to return to main menu or 'bye' to end chat</template>
+    </category>
+
+    <category>
+        <pattern>14</pattern>
+        <template>A Machine Learning Engineer develops AI systems that can learn and improve from experience.
+
+Key skills needed:
+- Machine learning algorithms
+- Python/R programming
+- Deep learning frameworks
+- Data modeling
+- Mathematics and statistics
+
+Average salary range: $100,000 - $170,000
+
+Type 'back' to return to main menu or 'bye' to end chat</template>
+    </category>
+
+    <category>
+        <pattern>15</pattern>
+        <template>An AI Research Engineer advances the field of artificial intelligence through innovative research and development.
+
+Key skills needed:
+- Advanced AI/ML concepts
+- Research methodology
+- Programming languages
+- Mathematics and statistics
+- Scientific paper writing
+
+Average salary range: $110,000 - $180,000
+
+Type 'back' to return to main menu or 'bye' to end chat</template>
+    </category>
+
     <!-- Navigation Keywords -->
     <category>
         <pattern>BACK</pattern>
