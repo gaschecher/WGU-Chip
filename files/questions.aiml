@@ -5,11 +5,12 @@
         <pattern>QUESTION1</pattern>
         <template>
             When faced with a problem, what's your preferred approach?
-            a) I break down complex problems and solve them systematically
-            b) I focus on understanding how users think and behave
-            c) I enjoy analyzing patterns and drawing conclusions
-            d) I'm always looking for potential risks and vulnerabilities
-            e) I like creating organized, structured solutions
+            a) I break down complex problems and solve them systematically.
+            b) I focus on understanding how users think and behave.
+            c) I enjoy analyzing patterns and drawing conclusions.
+            d) I'm always looking for potential risks and vulnerabilities.
+            e) I like creating organized, structured solutions.
+            Select your answer for Question 1:
             <think><set name="state">q1</set></think>
         </template>
     </category>
@@ -17,7 +18,7 @@
     <!-- Question 1 Answer Patterns -->
     <category>
         <pattern>A</pattern>
-        <that>WHEN FACED WITH A PROBLEM WHATS YOUR PREFERRED APPROACH</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 1</that>
         <template>
             <think>
                 <set name="software"><map name="math"><get name="software"/> + 7.5</map></set>
@@ -29,7 +30,7 @@
 
     <category>
         <pattern>B</pattern>
-        <that>WHEN FACED WITH A PROBLEM WHATS YOUR PREFERRED APPROACH</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 1</that>
         <template>
             <think>
                 <set name="ux"><map name="math"><get name="ux"/> + 7.5</map></set>
@@ -41,7 +42,7 @@
 
     <category>
         <pattern>C</pattern>
-        <that>WHEN FACED WITH A PROBLEM WHATS YOUR PREFERRED APPROACH</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 1</that>
         <template>
             <think>
                 <set name="data"><map name="math"><get name="data"/> + 7.5</map></set>
@@ -53,7 +54,7 @@
 
     <category>
         <pattern>D</pattern>
-        <that>WHEN FACED WITH A PROBLEM WHATS YOUR PREFERRED APPROACH</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 1</that>
         <template>
             <think>
                 <set name="security"><map name="math"><get name="security"/> + 7.5</map></set>
@@ -64,7 +65,7 @@
 
     <category>
         <pattern>E</pattern>
-        <that>WHEN FACED WITH A PROBLEM WHATS YOUR PREFERRED APPROACH</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 1</that>
         <template>
             <think>
                 <set name="database"><map name="math"><get name="database"/> + 7.5</map></set>
@@ -84,6 +85,7 @@
             c) The data analyst and insights provider
             d) The security-minded guardian
             e) The organized system coordinator
+            Select your answer for Question 2:
             <think><set name="state">q2</set></think>
         </template>
     </category>
@@ -91,7 +93,7 @@
     <!-- Question 2 Answer Patterns -->
     <category>
         <pattern>A</pattern>
-        <that>IN A TEAM PROJECT WHICH ROLE DO YOU NATURALLY TAKE</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
                 <set name="software"><map name="math"><get name="software"/> + 6</map></set>
@@ -103,7 +105,7 @@
 
     <category>
         <pattern>B</pattern>
-        <that>IN A TEAM PROJECT WHICH ROLE DO YOU NATURALLY TAKE</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
                 <set name="ux"><map name="math"><get name="ux"/> + 6</map></set>
@@ -114,7 +116,7 @@
 
     <category>
         <pattern>C</pattern>
-        <that>IN A TEAM PROJECT WHICH ROLE DO YOU NATURALLY TAKE</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
                 <set name="data"><map name="math"><get name="data"/> + 6</map></set>
@@ -125,7 +127,7 @@
 
     <category>
         <pattern>D</pattern>
-        <that>IN A TEAM PROJECT WHICH ROLE DO YOU NATURALLY TAKE</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
                 <set name="security"><map name="math"><get name="security"/> + 6</map></set>
@@ -137,7 +139,7 @@
 
     <category>
         <pattern>E</pattern>
-        <that>IN A TEAM PROJECT WHICH ROLE DO YOU NATURALLY TAKE</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
                 <set name="database"><map name="math"><get name="database"/> + 6</map></set>
@@ -156,6 +158,7 @@
             c) Finding insights in complex data
             d) Protecting systems from threats
             e) Managing and organizing data systems
+            Select your answer for Question 3:
             <think><set name="state">q3</set></think>
         </template>
     </category>
@@ -163,7 +166,7 @@
     <!-- Question 3 Answer Patterns -->
     <category>
         <pattern>A</pattern>
-        <that>WHAT ASPECT OF TECHNOLOGY INTERESTS YOU MOST</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 3</that>
         <template>
             <think>
                 <set name="software"><map name="math"><get name="software"/> + 7.5</map></set>
@@ -174,7 +177,7 @@
 
     <category>
         <pattern>B</pattern>
-        <that>WHAT ASPECT OF TECHNOLOGY INTERESTS YOU MOST</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 3</that>
         <template>
             <think>
                 <set name="ux"><map name="math"><get name="ux"/> + 7.5</map></set>
@@ -185,7 +188,7 @@
 
     <category>
         <pattern>C</pattern>
-        <that>WHAT ASPECT OF TECHNOLOGY INTERESTS YOU MOST</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 3</that>
         <template>
             <think>
                 <set name="data"><map name="math"><get name="data"/> + 7.5</map></set>
@@ -196,7 +199,7 @@
 
     <category>
         <pattern>D</pattern>
-        <that>WHAT ASPECT OF TECHNOLOGY INTERESTS YOU MOST</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 3</that>
         <template>
             <think>
                 <set name="security"><map name="math"><get name="security"/> + 7.5</map></set>
@@ -207,7 +210,7 @@
 
     <category>
         <pattern>E</pattern>
-        <that>WHAT ASPECT OF TECHNOLOGY INTERESTS YOU MOST</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 3</that>
         <template>
             <think>
                 <set name="database"><map name="math"><get name="database"/> + 7.5</map></set>
@@ -226,6 +229,7 @@
             c) Analyze data to find root causes
             d) Stay vigilant and prepare for issues
             e) Maintain clear processes and organization
+            Select your answer for Question 4:
             <think><set name="state">q4</set></think>
         </template>
     </category>
@@ -233,7 +237,7 @@
     <!-- Question 4 Answer Patterns -->
     <category>
         <pattern>A</pattern>
-        <that>HOW DO YOU HANDLE WORKPLACE CHALLENGES</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
                 <set name="software"><map name="math"><get name="software"/> + 5</map></set>
@@ -245,7 +249,7 @@
 
     <category>
         <pattern>B</pattern>
-        <that>HOW DO YOU HANDLE WORKPLACE CHALLENGES</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
                 <set name="ux"><map name="math"><get name="ux"/> + 5</map></set>
@@ -256,7 +260,7 @@
 
     <category>
         <pattern>C</pattern>
-        <that>HOW DO YOU HANDLE WORKPLACE CHALLENGES</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
                 <set name="data"><map name="math"><get name="data"/> + 5</map></set>
@@ -268,7 +272,7 @@
 
     <category>
         <pattern>D</pattern>
-        <that>HOW DO YOU HANDLE WORKPLACE CHALLENGES</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
                 <set name="security"><map name="math"><get name="security"/> + 5</map></set>
@@ -279,7 +283,7 @@
 
     <category>
         <pattern>E</pattern>
-        <that>HOW DO YOU HANDLE WORKPLACE CHALLENGES</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
                 <set name="database"><map name="math"><get name="database"/> + 5</map></set>
@@ -298,6 +302,7 @@
             c) Discovering valuable insights from data
             d) Preventing security breaches
             e) Creating reliable data systems
+            Select your answer for Question 5:
             <think><set name="state">q5</set></think>
         </template>
     </category>
@@ -305,7 +310,7 @@
     <!-- Question 5 Answer Patterns -->
     <category>
         <pattern>A</pattern>
-        <that>WHAT ACHIEVEMENT WOULD MAKE YOU MOST PROUD</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
                 <set name="software"><map name="math"><get name="software"/> + 6</map></set>
@@ -316,7 +321,7 @@
 
     <category>
         <pattern>B</pattern>
-        <that>WHAT ACHIEVEMENT WOULD MAKE YOU MOST PROUD</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
                 <set name="ux"><map name="math"><get name="ux"/> + 6</map></set>
@@ -327,7 +332,7 @@
 
     <category>
         <pattern>C</pattern>
-        <that>WHAT ACHIEVEMENT WOULD MAKE YOU MOST PROUD</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
                 <set name="data"><map name="math"><get name="data"/> + 6</map></set>
@@ -338,7 +343,7 @@
 
     <category>
         <pattern>D</pattern>
-        <that>WHAT ACHIEVEMENT WOULD MAKE YOU MOST PROUD</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
                 <set name="security"><map name="math"><get name="security"/> + 6</map></set>
@@ -349,7 +354,7 @@
 
     <category>
         <pattern>E</pattern>
-        <that>WHAT ACHIEVEMENT WOULD MAKE YOU MOST PROUD</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
                 <set name="database"><map name="math"><get name="database"/> + 6</map></set>
@@ -361,31 +366,31 @@
     <!-- General answer pattern catch-all -->
     <category>
         <pattern>_</pattern>
-        <that>WHEN FACED WITH A PROBLEM WHATS YOUR PREFERRED APPROACH</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 1</that>
         <template>Please select a valid option (a, b, c, d, or e)</template>
     </category>
 
     <category>
         <pattern>_</pattern>
-        <that>IN A TEAM PROJECT WHICH ROLE DO YOU NATURALLY TAKE</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>Please select a valid option (a, b, c, d, or e)</template>
     </category>
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT ASPECT OF TECHNOLOGY INTERESTS YOU MOST</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 3</that>
         <template>Please select a valid option (a, b, c, d, or e)</template>
     </category>
 
     <category>
         <pattern>_</pattern>
-        <that>HOW DO YOU HANDLE WORKPLACE CHALLENGES</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>Please select a valid option (a, b, c, d, or e)</template>
     </category>
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT ACHIEVEMENT WOULD MAKE YOU MOST PROUD</that>
+        <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>Please select a valid option (a, b, c, d, or e)</template>
     </category>
 </aiml>
