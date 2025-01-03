@@ -4,7 +4,7 @@
     <category>
         <pattern>START</pattern>
         <template>
-            Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options? (y/n)
+            Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options? (Type 'yes' or 'no')
             <think>
                 <set name="software">0</set>
                 <set name="ux">0</set>
