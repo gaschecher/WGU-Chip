@@ -315,7 +315,7 @@
             <think>
                 <set name="software"><map name="math"><get name="software"/> + 6</map></set>
             </think>
-            <srai>CALCULATE_RESULTS</srai>
+            <srai>RESULTS</srai>
         </template>
     </category>
 
@@ -326,7 +326,7 @@
             <think>
                 <set name="ux"><map name="math"><get name="ux"/> + 6</map></set>
             </think>
-            <srai>CALCULATE_RESULTS</srai>
+            <srai>RESULTS</srai>
         </template>
     </category>
 
@@ -337,7 +337,7 @@
             <think>
                 <set name="data"><map name="math"><get name="data"/> + 6</map></set>
             </think>
-            <srai>CALCULATE_RESULTS</srai>
+            <srai>RESULTS</srai>
         </template>
     </category>
 
@@ -348,7 +348,7 @@
             <think>
                 <set name="security"><map name="math"><get name="security"/> + 6</map></set>
             </think>
-            <srai>CALCULATE_RESULTS</srai>
+            <srai>RESULTS</srai>
         </template>
     </category>
 
@@ -359,7 +359,7 @@
             <think>
                 <set name="database"><map name="math"><get name="database"/> + 6</map></set>
             </think>
-            <srai>CALCULATE_RESULTS</srai>
+            <srai>RESULTS</srai>
         </template>
     </category>
 
