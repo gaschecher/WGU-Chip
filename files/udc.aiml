@@ -2,6 +2,6 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>Oh no! I seem to have gotten lost in our conversation. Apologies but you may have to start over. Greet me with hello to start over again.</template>
+    <template>Oh no! I seem to have gotten lost in our conversation. Apologies but you may have to start over. Greet me with hello to start over again or double check your input value.</template>
   </category>
 </aiml>
