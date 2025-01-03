@@ -18,27 +18,26 @@
 
     <!-- Yes/No handlers for intro -->
     <category>
-        <pattern>Y</pattern>
-        <that>Would you like to learn about CS career options? (Type 'yes' or 'no')</that>
-        <template><srai>QUESTION1</srai></template>
-    </category>
-
-    <category>
         <pattern>YES</pattern>
         <that>Would you like to learn about CS career options? (Type 'yes' or 'no')</that>
         <template><srai>QUESTION1</srai></template>
     </category>
 
     <category>
-        <pattern>N</pattern>
+        <pattern>NO</pattern>
         <that>Would you like to learn about CS career options? (Type 'yes' or 'no')</that>
         <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
+    <!-- Generic fallback for YES/NO without correct context -->
+    <category>
+        <pattern>YES</pattern>
+        <template>It seems like we got out of sync. Please type 'START' to begin again.</template>
+    </category>
+
     <category>
         <pattern>NO</pattern>
-        <that>Would you like to learn about CS career options? (Type 'yes' or 'no')</that>
-        <template>Thanks for stopping by! Feel free to come back anytime.</template>
+        <template>It seems like we got out of sync. Please type 'START' to begin again.</template>
     </category>
 
     <!-- Career selection handlers -->
@@ -138,5 +137,4 @@
         <pattern>*</pattern>
         <template>To start your career guidance session, please type 'START'.</template>
     </category>
-
 </aiml>
