@@ -22,7 +22,8 @@
         <template>
             <think>
                 <set name="software"><map name="math"><get name="software"/> + 8</map></set>
-                <set name="database"><map name="math"><get name="database"/> + 5</map></set>
+                <set name="security"><map name="math"><get name="security"/> + 4</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 4</map></set>
             </think>
             <srai>QUESTION2</srai>
         </template>
@@ -34,7 +35,7 @@
         <template>
             <think>
                 <set name="ux"><map name="math"><get name="ux"/> + 8</map></set>
-                <set name="software"><map name="math"><get name="software"/> + 3</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 4</map></set>
             </think>
             <srai>QUESTION2</srai>
         </template>
@@ -46,7 +47,9 @@
         <template>
             <think>
                 <set name="data"><map name="math"><get name="data"/> + 8</map></set>
-                <set name="database"><map name="math"><get name="database"/> + 5</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 4</map></set>
+                <set name="security"><map name="math"><get name="security"/> + 4</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 4</map></set>
             </think>
             <srai>QUESTION2</srai>
         </template>
@@ -58,6 +61,7 @@
         <template>
             <think>
                 <set name="security"><map name="math"><get name="security"/> + 8</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 4</map></set>
             </think>
             <srai>QUESTION2</srai>
         </template>
@@ -68,8 +72,8 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 1</that>
         <template>
             <think>
-                <set name="database"><map name="math"><get name="database"/> + 8</map></set>
-                <set name="software"><map name="math"><get name="software"/> + 5</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 8</map></set>
+                <set name="ux"><map name="math"><get name="ux"/> + 4</map></set>
             </think>
             <srai>QUESTION2</srai>
         </template>
@@ -96,8 +100,8 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
-                <set name="software"><map name="math"><get name="software"/> + 6</map></set>
-                <set name="data"><map name="math"><get name="data"/> + 2</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 8</map></set>
+                <set name="security"><map name="math"><get name="security"/> + 4</map></set>
             </think>
             <srai>QUESTION3</srai>
         </template>
@@ -108,7 +112,8 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
-                <set name="ux"><map name="math"><get name="ux"/> + 6</map></set>
+                <set name="ux"><map name="math"><get name="ux"/> + 8</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 4</map></set>
             </think>
             <srai>QUESTION3</srai>
         </template>
@@ -119,7 +124,8 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
-                <set name="data"><map name="math"><get name="data"/> + 6</map></set>
+                <set name="data"><map name="math"><get name="data"/> + 8</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 4</map></set>
             </think>
             <srai>QUESTION3</srai>
         </template>
@@ -130,8 +136,8 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
-                <set name="security"><map name="math"><get name="security"/> + 6</map></set>
-                <set name="database"><map name="math"><get name="database"/> + 2</map></set>
+                <set name="security"><map name="math"><get name="security"/> + 8</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 4</map></set>
             </think>
             <srai>QUESTION3</srai>
         </template>
@@ -142,7 +148,7 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
         <template>
             <think>
-                <set name="database"><map name="math"><get name="database"/> + 6</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 8</map></set>
             </think>
             <srai>QUESTION3</srai>
         </template>
@@ -170,6 +176,7 @@
         <template>
             <think>
                 <set name="software"><map name="math"><get name="software"/> + 8</map></set>
+                <set name="ux"><map name="math"><get name="ux"/> + 4</map></set>
             </think>
             <srai>QUESTION4</srai>
         </template>
@@ -192,6 +199,7 @@
         <template>
             <think>
                 <set name="data"><map name="math"><get name="data"/> + 8</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 4</map></set>
             </think>
             <srai>QUESTION4</srai>
         </template>
@@ -203,6 +211,7 @@
         <template>
             <think>
                 <set name="security"><map name="math"><get name="security"/> + 8</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 4</map></set>
             </think>
             <srai>QUESTION4</srai>
         </template>
@@ -214,6 +223,7 @@
         <template>
             <think>
                 <set name="database"><map name="math"><get name="database"/> + 8</map></set>
+                <set name="data"><map name="math"><get name="data"/> + 4</map></set>
             </think>
             <srai>QUESTION4</srai>
         </template>
@@ -240,8 +250,10 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
-                <set name="software"><map name="math"><get name="software"/> + 5</map></set>
-                <set name="data"><map name="math"><get name="data"/> + 3</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 8</map></set>
+                <set name="ux"><map name="math"><get name="ux"/> + 4</map></set>
+                <set name="data"><map name="math"><get name="data"/> + 4</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 4</map></set>
             </think>
             <srai>QUESTION5</srai>
         </template>
@@ -252,7 +264,8 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
-                <set name="ux"><map name="math"><get name="ux"/> + 5</map></set>
+                <set name="ux"><map name="math"><get name="ux"/> + 8</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 4</map></set>
             </think>
             <srai>QUESTION5</srai>
         </template>
@@ -263,8 +276,9 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
-                <set name="data"><map name="math"><get name="data"/> + 5</map></set>
-                <set name="security"><map name="math"><get name="security"/> + 2</map></set>
+                <set name="data"><map name="math"><get name="data"/> + 8</map></set>
+                <set name="security"><map name="math"><get name="security"/> + 4</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 4</map></set>
             </think>
             <srai>QUESTION5</srai>
         </template>
@@ -275,7 +289,8 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
-                <set name="security"><map name="math"><get name="security"/> + 5</map></set>
+                <set name="security"><map name="math"><get name="security"/> + 8</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 4</map></set>
             </think>
             <srai>QUESTION5</srai>
         </template>
@@ -286,7 +301,8 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
         <template>
             <think>
-                <set name="database"><map name="math"><get name="database"/> + 5</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 8</map></set>
+                <set name="security"><map name="math"><get name="security"/> + 4</map></set>
             </think>
             <srai>QUESTION5</srai>
         </template>
@@ -313,7 +329,7 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
-                <set name="software"><map name="math"><get name="software"/> + 6</map></set>
+                <set name="software"><map name="math"><get name="software"/> + 8</map></set>
             </think>
             <srai>RESULTS</srai>
         </template>
@@ -324,7 +340,7 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
-                <set name="ux"><map name="math"><get name="ux"/> + 6</map></set>
+                <set name="ux"><map name="math"><get name="ux"/> + 8</map></set>
             </think>
             <srai>RESULTS</srai>
         </template>
@@ -335,7 +351,7 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
-                <set name="data"><map name="math"><get name="data"/> + 6</map></set>
+                <set name="data"><map name="math"><get name="data"/> + 8</map></set>
             </think>
             <srai>RESULTS</srai>
         </template>
@@ -346,7 +362,7 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
-                <set name="security"><map name="math"><get name="security"/> + 6</map></set>
+                <set name="security"><map name="math"><get name="security"/> + 8</map></set>
             </think>
             <srai>RESULTS</srai>
         </template>
@@ -357,7 +373,7 @@
         <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
         <template>
             <think>
-                <set name="database"><map name="math"><get name="database"/> + 6</map></set>
+                <set name="database"><map name="math"><get name="database"/> + 8</map></set>
             </think>
             <srai>RESULTS</srai>
         </template>

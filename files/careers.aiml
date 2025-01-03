@@ -3,14 +3,22 @@
     <category>
         <pattern>RESULTS</pattern>
         <template>
+            <think>
+                <!-- Calculate percentages (score/40 * 2.5) -->
+                <set name="softwarescore"><map name="math"><get name="software"/> * 2.5</map></set>
+                <set name="uxscore"><map name="math"><get name="ux"/> * 2.5</map></set>
+                <set name="datascore"><map name="math"><get name="data"/> * 2.5</map></set>
+                <set name="securityscore"><map name="math"><get name="security"/> * 2.5</map></set>
+                <set name="databasescore"><map name="math"><get name="database"/> * 2.5</map></set>
+            </think>
             Based on your responses, here's how you align with different CS careers:
-
-            Software Engineer - <get name="software"/>% Match
-            UX Designer - <get name="ux"/>% Match
-            Data Scientist - <get name="data"/>% Match
-            Cybersecurity Analyst - <get name="security"/>% Match
-            Database Administrator - <get name="database"/>% Match
-
+            
+            Software Engineer - <get name="softwarescore"/>% Match
+            UX Designer - <get name="uxscore"/>% Match
+            Data Scientist - <get name="datascore"/>% Match
+            Cybersecurity Analyst - <get name="securityscore"/>% Match
+            Database Administrator - <get name="databasescore"/>% Match
+            
             Would you like to learn more about these career options? (y/n)
         </template>
     </category>
@@ -33,50 +41,114 @@
 
     <category>
         <pattern>1</pattern>
-        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOW_SOFTWARE</srai></template>
+        <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOWSOFTWARE</srai></template>
     </category>
 
     <category>
         <pattern>2</pattern>
-        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOW_UX</srai></template>
+        <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOWUX</srai></template>
     </category>
 
     <category>
         <pattern>3</pattern>
-        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOW_DATA</srai></template>
+        <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOWDATA</srai></template>
     </category>
 
     <category>
         <pattern>4</pattern>
-        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOW_SECURITY</srai></template>
+        <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOWSECURITY</srai></template>
     </category>
 
     <category>
         <pattern>5</pattern>
-        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOW_DATABASE</srai></template>
+        <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOWDATABASE</srai></template>
     </category>
 
-    <!-- Career Details with Follow-up Questions -->
     <category>
-        <pattern>SHOW_SOFTWARE</pattern>
+        <pattern>SHOWSOFTWARE</pattern>
         <template>
             Software Engineer Career Details:
-            • Core responsibilities: Develop and maintain computer programs, applications, and systems
-            • Required skills: Programming languages (Java, Python, etc.), problem-solving, team collaboration
-            • Education: Bachelor's in Computer Science, Software Engineering, or related field
-            • Career path: Junior Developer → Senior Developer → Technical Lead → Software Architect
-            • Average Salary: $132,270
-
+            • Core responsibilities: Design, develop, and maintain software applications and systems
+            • Required skills: Programming languages (Java, Python, etc.), problem-solving, system design
+            • Average salary range: $70,000 - $150,000+ depending on experience and location
+            • Education needed: BS in Computer Science or related field
+            • Career progression: Junior Developer → Senior Developer → Tech Lead → Software Architect
+            • Key tools: Git, IDEs, testing frameworks, CI/CD tools
+            • Industry demand: High growth with continuous opportunities
+            
             Would you like to learn more about other career options? (y/n)
         </template>
     </category>
 
-    <!-- Similar patterns for other careers -->
+    <category>
+        <pattern>SHOWUX</pattern>
+        <template>
+            UX Designer Career Details:
+            • Core responsibilities: Design user interfaces and improve user experience
+            • Required skills: UI/UX design principles, wireframing, user research
+            • Average salary range: $65,000 - $130,000+ depending on experience and location
+            • Education needed: BS in Design, HCI, or related field
+            • Career progression: Junior Designer → Senior Designer → UX Lead → Design Director
+            • Key tools: Figma, Sketch, Adobe XD, prototyping tools
+            • Industry focus: Creating intuitive and accessible digital experiences
+            
+            Would you like to learn more about other career options? (y/n)
+        </template>
+    </category>
+
+    <category>
+        <pattern>SHOWDATA</pattern>
+        <template>
+            Data Scientist Career Details:
+            • Core responsibilities: Analyze data, build models, extract insights
+            • Required skills: Statistics, machine learning, Python/R, data visualization
+            • Average salary range: $85,000 - $165,000+ depending on experience and location
+            • Education needed: BS/MS in Data Science, Statistics, or related field
+            • Career progression: Junior Data Scientist → Senior Data Scientist → Lead Data Scientist → Chief Data Scientist
+            • Key tools: Python, R, SQL, Jupyter, TensorFlow
+            • Industry impact: Driving data-informed decision making
+            
+            Would you like to learn more about other career options? (y/n)
+        </template>
+    </category>
+
+    <category>
+        <pattern>SHOWSECURITY</pattern>
+        <template>
+            Cybersecurity Analyst Career Details:
+            • Core responsibilities: Protect systems, monitor security, respond to incidents
+            • Required skills: Network security, threat analysis, security tools
+            • Average salary range: $75,000 - $145,000+ depending on experience and location
+            • Education needed: BS in Cybersecurity or related field
+            • Career progression: Security Analyst → Senior Analyst → Security Engineer → CISO
+            • Key tools: Security information and event management (SIEM) tools, penetration testing tools
+            • Industry focus: Protecting organizations from cyber threats
+            
+            Would you like to learn more about other career options? (y/n)
+        </template>
+    </category>
+
+    <category>
+        <pattern>SHOWDATABASE</pattern>
+        <template>
+            Database Administrator Career Details:
+            • Core responsibilities: Manage databases, ensure data integrity and availability
+            • Required skills: SQL, database management systems, backup and recovery
+            • Average salary range: $70,000 - $140,000+ depending on experience and location
+            • Education needed: BS in Computer Science or related field
+            • Career progression: Junior DBA → Senior DBA → Database Architect → Data Infrastructure Manager
+            • Key tools: Oracle, MySQL, PostgreSQL, MongoDB
+            • Industry focus: Managing and optimizing data storage systems
+            
+            Would you like to learn more about other career options? (y/n)
+        </template>
+    </category>
+
     <category>
         <pattern>Y</pattern>
         <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
@@ -97,7 +169,15 @@
         <pattern>N</pattern>
         <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
         <template>
-            Thanks for chatting! Good luck with your career planning!
+            Thanks for exploring career options with me! I hope this information helps with your career planning. Remember, these are just guidelines, and you can always explore multiple paths or specialize in areas that combine different roles. Good luck with your career journey!
+        </template>
+    </category>
+
+    <category>
+        <pattern>N</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE ABOUT THESE CAREER OPTIONS</that>
+        <template>
+            Thanks for taking the career assessment! If you have any other questions in the future, feel free to start another chat. Good luck with your career planning!
         </template>
     </category>
 </aiml>
