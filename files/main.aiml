@@ -19,25 +19,25 @@
     <!-- Yes/No handlers for intro -->
     <category>
         <pattern>Y</pattern>
-        <that>* WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS * Y N *</that>
+        <that>Would you like to learn about CS career options? (Type 'yes' or 'no')</that>
         <template><srai>QUESTION1</srai></template>
     </category>
 
     <category>
         <pattern>YES</pattern>
-        <that>* WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS * Y N *</that>
+        <that>Would you like to learn about CS career options? (Type 'yes' or 'no')</that>
         <template><srai>QUESTION1</srai></template>
     </category>
 
     <category>
         <pattern>N</pattern>
-        <that>* WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS * Y N *</that>
+        <that>Would you like to learn about CS career options? (Type 'yes' or 'no')</that>
         <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
     <category>
         <pattern>NO</pattern>
-        <that>* WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS * Y N *</that>
+        <that>Would you like to learn about CS career options? (Type 'yes' or 'no')</that>
         <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
