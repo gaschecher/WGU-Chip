@@ -35,37 +35,37 @@
             4. Security Analyst.
             5. Database Administrator.
             
-            Enter the number that corresponds to the career you would like to see or type 'bye' to exit.
+            Enter the number that corresponds to the career you would like to see or type 'no' to exit.
         </template>
     </category>
 
     <category>
         <pattern>1</pattern>
-        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE BYE TO EXIT</that>
+        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE NO TO EXIT</that>
         <template><srai>SOFTWARE</srai></template>
     </category>
 
     <category>
         <pattern>2</pattern>
-        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE BYE TO EXIT</that>
+        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE NO TO EXIT</that>
         <template><srai>UX</srai></template>
     </category>
 
     <category>
         <pattern>3</pattern>
-        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE BYE TO EXIT</that>
+        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE NO TO EXIT</that>
         <template><srai>DATA</srai></template>
     </category>
 
     <category>
         <pattern>4</pattern>
-        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE BYE TO EXIT</that>
+        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE NO TO EXIT</that>
         <template><srai>SECURITY</srai></template>
     </category>
 
     <category>
         <pattern>5</pattern>
-        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE BYE TO EXIT</that>
+        <that>ENTER THE NUMBER THAT CORRESPONDS TO THE CAREER YOU WOULD LIKE TO SEE OR TYPE NO TO EXIT</that>
         <template><srai>DATABASE</srai></template>
     </category>
 
@@ -161,7 +161,7 @@
         4. Security Analyst.
         5. Database Administrator.
             
-        Enter the number that corresponds to the career you would like to see or type 'bye' to exit.
+        Enter the number that corresponds to the career you would like to see or type 'no' to exit.
     </template>
 </category>
 
