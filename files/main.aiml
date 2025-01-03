@@ -4,12 +4,12 @@
         <pattern>INITIALIZE</pattern>
         <template>
             <think>
-                <set name="software">0</set>
-                <set name="ux">0</set>
-                <set name="data">0</set>
-                <set name="security">0</set>
-                <set name="database">0</set>
-            </think>
+            <set name="software"><map name="math">0</map></set>
+            <set name="ux"><map name="math">0</map></set>
+            <set name="data"><map name="math">0</map></set>
+            <set name="security"><map name="math">0</map></set>
+            <set name="database"><map name="math">0</map></set>
+        </think>
         </template>
     </category>
     
