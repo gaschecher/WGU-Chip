@@ -149,13 +149,13 @@
         </template>
     </category>
 
-    <category>
-        <pattern>YES</pattern>
-        <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
-        <template>
-           <srai>IF YOU WOULD LIKE TO LEARN MORE ABOUT THE CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</srai>
-        </template>
-    </category>
+   <category>
+    <pattern>YES</pattern>
+    <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
+    <template>
+        <srai>YES</srai>
+    </template>
+</category>
 
 
     <category>
