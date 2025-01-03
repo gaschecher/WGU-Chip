@@ -4,14 +4,14 @@
     <category>
         <pattern>*</pattern>
         <template>
-            To start your career guidance session, please type 'START'.
+            Please type 'hi' to begin.
         </template>
     </category>
 
     <category>
-        <pattern>START</pattern>
+        <pattern>HI</pattern>
         <template>
-            Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Ready to explore CS careers Type yes or no.
+            Hi! I'm Chip, your computer science career advisor. I'm a bot that has been designed to help you chose a career path in your Computer Science journey that fits you best. To do this, you may need to answer some questions. If you are ready to start the quiz type yes or type no to exit.
             <think>
                 <set name="software">0</set>
                 <set name="ux">0</set>
@@ -24,13 +24,13 @@
 
     <category>
         <pattern>YES</pattern>
-        <that>READY TO EXPLORE CS CAREERS TYPE YES OR NO</that>
+        <that>IF YOU ARE READY TO START THE QUIZ TYPE YES OR TYPE NO TO EXIT</that>
         <template><srai>QUESTION1</srai></template>
     </category>
 
     <category>
         <pattern>NO</pattern>
-        <that>READY TO EXPLORE CS CAREERS TYPE YES OR NO</that>
+        <that>IF YOU ARE READY TO START THE QUIZ TYPE YES OR TYPE NO TO EXIT</that>
         <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
