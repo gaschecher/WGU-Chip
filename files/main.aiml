@@ -11,7 +11,7 @@
     <category>
         <pattern>HI</pattern>
         <template>
-            Hi! I'm Chip, your computer science career advisor. I'm a bot that has been designed to help you chose a career path in your Computer Science journey that fits you best. To do this, you may need to answer some questions. If you are ready to start the quiz type 'yes' or type 'no' to exit.
+            Hi! I'm Chip, your computer science career advisor. Nice to meet you! I hear you are a student interested in exploring careers in Computer Science. I'm a bot that has been designed to help you along this journey. For me to recommend a career path for you, you may need to answer some questions. If you are ready to start the quiz type 'yes' or type 'no' to exit.
             <think>
                 <set name="software">0</set>
                 <set name="ux">0</set>
@@ -36,7 +36,7 @@
 
     <category>
         <pattern>BYE</pattern>
-        <template>Thanks for chatting! Good luck with your career planning!</template>
+        <template>Thanks for chatting! Good luck with your career planning. If you would still have questions about your career path or would like to speak to a human, please reach out to your WGU Career Advisor via email at Gabriella@wgu.edu</template>
     </category>
 
     <category>
