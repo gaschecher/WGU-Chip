@@ -24,7 +24,7 @@
     </category>
 
     <category>
-        <pattern>Y</pattern>
+        <pattern>YES</pattern>
         <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT THESE CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
         <template>
             Which career would you like to learn more about?
