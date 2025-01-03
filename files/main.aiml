@@ -11,9 +11,8 @@
     <category>
         <pattern>START</pattern>
         <template>
-            Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options? Type 'yes' or 'no'.
+            Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Ready to explore CS careers Type yes or no.
             <think>
-                <set name="state">intro</set>
                 <set name="software">0</set>
                 <set name="ux">0</set>
                 <set name="data">0</set>
@@ -23,17 +22,15 @@
         </template>
     </category>
 
-
     <category>
         <pattern>YES</pattern>
-        <that>Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options? Type 'yes' or 'no'.</that>
+        <that>READY TO EXPLORE CS CAREERS TYPE YES OR NO</that>
         <template><srai>QUESTION1</srai></template>
     </category>
 
-
     <category>
         <pattern>NO</pattern>
-        <that>Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options? Type 'yes' or 'no'.</that>
+        <that>READY TO EXPLORE CS CAREERS TYPE YES OR NO</that>
         <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
