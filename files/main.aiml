@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <!-- Bot initialization -->
-
     <category>
-        <pattern>HI</pattern>
+        <pattern>INITIALIZE</pattern>
         <template>
-            Hi! I'm Chip, your computer science career advisor. Nice to meet you! I hear you are a student interested in exploring careers in Computer Science. I'm a bot that has been designed to help you along this journey. In order for me to recommend a career path for you, I have a brief quiz prepared. The questions inside are multiple choice and designed to help match your personality and goals with a career path that may fit you best. The quiz is 5 questions long. If you are ready to start the quiz type 'yes' or type 'no' to exit.
             <think>
                 <set name="software">0</set>
                 <set name="ux">0</set>
@@ -15,13 +12,20 @@
             </think>
         </template>
     </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            <srai>INITIALIZE</srai>
+            Hi! I'm Chip, your computer science career advisor. Nice to meet you! I hear you are a student interested in exploring careers in Computer Science. I'm a bot that has been designed to help you along this journey. In order for me to recommend a career path for you, I have a brief quiz prepared. The questions inside are multiple choice and designed to help match your personality and goals with a career path that may fit you best. The quiz is 5 questions long. If you are ready to start the quiz type 'yes' or type 'no' to exit.
+        </template>
+    </category>
 
     <category>
         <pattern>YES</pattern>
         <that>IF YOU ARE READY TO START THE QUIZ TYPE YES OR TYPE NO TO EXIT</that>
         <template><srai>QUESTION1</srai></template>
     </category>
-
 
     <category>
         <pattern>BYE</pattern>
