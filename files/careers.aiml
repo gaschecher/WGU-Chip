@@ -11,66 +11,66 @@
                 <set name="securityscore"><map name="math"><get name="security"/> * 2.5</map></set>
                 <set name="databasescore"><map name="math"><get name="database"/> * 2.5</map></set>
             </think>
-            Based on your responses, here's how you align with different CS careers:
+            Based on your responses, here's how you compatible you may be with the different Computer Science careers:
             
-            Software Engineer - <get name="softwarescore"/>% Match
-            UX Designer - <get name="uxscore"/>% Match
-            Data Scientist - <get name="datascore"/>% Match
-            Cybersecurity Analyst - <get name="securityscore"/>% Match
-            Database Administrator - <get name="databasescore"/>% Match
+            Software Engineer - <get name="softwarescore"/>% Match.
+            UX Designer - <get name="uxscore"/>% Match.
+            Data Scientist - <get name="datascore"/>% Match.
+            Cybersecurity Analyst - <get name="securityscore"/>% Match.
+            Database Administrator - <get name="databasescore"/>% Match.
             
-            Would you like to learn more about these career options? (y/n)
+            If you would like to learn more about these career options type 'yes' or type 'no' to exit. 
         </template>
     </category>
 
     <category>
         <pattern>Y</pattern>
-        <that>WOULD YOU LIKE TO LEARN MORE ABOUT THESE CAREER OPTIONS</that>
+        <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT THESE CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
         <template>
             Which career would you like to learn more about?
             
-            1. Software Engineer
-            2. UX Designer
-            3. Data Scientist
-            4. Security Analyst
-            5. Database Administrator
+            1. Software Engineer.
+            2. UX Designer.
+            3. Data Scientist.
+            4. Security Analyst.
+            5. Database Administrator.
             
-            (Enter 1-5 or type 'bye' to exit)
+            Enter 1-5 or type 'bye' to exit.
         </template>
     </category>
 
     <category>
         <pattern>1</pattern>
         <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOWSOFTWARE</srai></template>
+        <template><srai>SOFTWARE</srai></template>
     </category>
 
     <category>
         <pattern>2</pattern>
         <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOWUX</srai></template>
+        <template><srai>UX</srai></template>
     </category>
 
     <category>
         <pattern>3</pattern>
         <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOWDATA</srai></template>
+        <template><srai>DATA</srai></template>
     </category>
 
     <category>
         <pattern>4</pattern>
         <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOWSECURITY</srai></template>
+        <template><srai>SECURITY</srai></template>
     </category>
 
     <category>
         <pattern>5</pattern>
         <that>ENTER 1-5 OR TYPE BYE TO EXIT</that>
-        <template><srai>SHOWDATABASE</srai></template>
+        <template><srai>DATABASE</srai></template>
     </category>
 
     <category>
-        <pattern>SHOWSOFTWARE</pattern>
+        <pattern>SOFTWARE</pattern>
         <template>
             Software Engineer Career Details:
             • Core responsibilities: Design, develop, and maintain software applications and systems
@@ -81,12 +81,12 @@
             • Key tools: Git, IDEs, testing frameworks, CI/CD tools
             • Industry demand: High growth with continuous opportunities
             
-            Would you like to learn more about other career options? (y/n)
+            If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
     </category>
 
     <category>
-        <pattern>SHOWUX</pattern>
+        <pattern>UX</pattern>
         <template>
             UX Designer Career Details:
             • Core responsibilities: Design user interfaces and improve user experience
@@ -97,12 +97,12 @@
             • Key tools: Figma, Sketch, Adobe XD, prototyping tools
             • Industry focus: Creating intuitive and accessible digital experiences
             
-            Would you like to learn more about other career options? (y/n)
+            If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
     </category>
 
     <category>
-        <pattern>SHOWDATA</pattern>
+        <pattern>DATA</pattern>
         <template>
             Data Scientist Career Details:
             • Core responsibilities: Analyze data, build models, extract insights
@@ -113,12 +113,12 @@
             • Key tools: Python, R, SQL, Jupyter, TensorFlow
             • Industry impact: Driving data-informed decision making
             
-            Would you like to learn more about other career options? (y/n)
+            If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
     </category>
 
     <category>
-        <pattern>SHOWSECURITY</pattern>
+        <pattern>SECURITY</pattern>
         <template>
             Cybersecurity Analyst Career Details:
             • Core responsibilities: Protect systems, monitor security, respond to incidents
@@ -129,12 +129,12 @@
             • Key tools: Security information and event management (SIEM) tools, penetration testing tools
             • Industry focus: Protecting organizations from cyber threats
             
-            Would you like to learn more about other career options? (y/n)
+            If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
     </category>
 
     <category>
-        <pattern>SHOWDATABASE</pattern>
+        <pattern>DATABASE</pattern>
         <template>
             Database Administrator Career Details:
             • Core responsibilities: Manage databases, ensure data integrity and availability
@@ -145,13 +145,13 @@
             • Key tools: Oracle, MySQL, PostgreSQL, MongoDB
             • Industry focus: Managing and optimizing data storage systems
             
-            Would you like to learn more about other career options? (y/n)
+            If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
     </category>
 
     <category>
-        <pattern>Y</pattern>
-        <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
+        <pattern>YES</pattern>
+        <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
         <template>
             Which career would you like to learn more about?
             
@@ -165,19 +165,12 @@
         </template>
     </category>
 
-    <category>
-        <pattern>N</pattern>
-        <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
-        <template>
-            Thanks for exploring career options with me! I hope this information helps with your career planning. Remember, these are just guidelines, and you can always explore multiple paths or specialize in areas that combine different roles. Good luck with your career journey!
-        </template>
-    </category>
 
     <category>
-        <pattern>N</pattern>
+        <pattern>NO</pattern>
         <that>WOULD YOU LIKE TO LEARN MORE ABOUT THESE CAREER OPTIONS</that>
         <template>
-            Thanks for taking the career assessment! If you have any other questions in the future, feel free to start another chat. Good luck with your career planning!
+            Thanks for exploring career options with me! I hope this information helps with your career planning. Remember, these are just guidelines, and you can always explore multiple paths or specialize in areas that combine different roles. Good luck with your career journey! If you have any other questions that I can't answer, please reach out to your WGU Career Advisor via email at Gabriella@wgu.edu. Good luck with your career planning!
         </template>
     </category>
 </aiml>
