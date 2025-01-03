@@ -5,7 +5,7 @@
     <category>
         <pattern>HI</pattern>
         <template>
-            Hi! I'm Chip, your computer science career advisor. Nice to meet you! I hear you are a student interested in exploring careers in Computer Science. I'm a bot that has been designed to help you along this journey. For me to recommend a career path for you, you may need to answer some questions. If you are ready to start the quiz type 'yes' or type 'no' to exit.
+            Hi! I'm Chip, your computer science career advisor. Nice to meet you! I hear you are a student interested in exploring careers in Computer Science. I'm a bot that has been designed to help you along this journey. In order for me to recommend a career path for you, I have a brief quiz prepared. The questions inside are multiple choice and designed to help match your personality and goals with a career path that may fit you best. The quiz is 5 questions long. If you are ready to start the quiz type 'yes' or type 'no' to exit.
             <think>
                 <set name="software">0</set>
                 <set name="ux">0</set>
