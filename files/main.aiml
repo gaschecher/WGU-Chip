@@ -42,4 +42,19 @@
         <pattern>NO</pattern>
         <template><srai>BYE</srai></template>
     </category>
+    
+    <category>
+        <pattern>HEY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+     <category>
+        <pattern>SUP</pattern>
+        <template><srai>HI</srai></template>
+    </category>
 </aiml>
