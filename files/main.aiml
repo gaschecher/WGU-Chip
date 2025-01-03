@@ -2,51 +2,122 @@
 <aiml version="2.0">
     <!-- Bot initialization -->
     <category>
-        <pattern>*</pattern>
-        <template>
-            To start your career guidance session, please type 'START'.
-        </template>
-    </category>
-
-    <category>
         <pattern>START</pattern>
         <template>
             Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options? (y/n)
             <think>
-                <set name="state">intro</set>
                 <set name="software">0</set>
                 <set name="ux">0</set>
                 <set name="data">0</set>
                 <set name="security">0</set>
                 <set name="database">0</set>
+                <set name="state">intro</set>
             </think>
         </template>
     </category>
 
+    <!-- Yes/No handlers for intro -->
     <category>
         <pattern>Y</pattern>
-        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <that>* WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS * Y N *</that>
         <template><srai>QUESTION1</srai></template>
     </category>
 
     <category>
         <pattern>YES</pattern>
-        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <that>* WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS * Y N *</that>
         <template><srai>QUESTION1</srai></template>
     </category>
 
     <category>
         <pattern>N</pattern>
-        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <that>* WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS * Y N *</that>
         <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
     <category>
         <pattern>NO</pattern>
-        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <that>* WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS * Y N *</that>
         <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
+    <!-- Career selection handlers -->
+    <category>
+        <pattern>1</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_SOFTWARE</srai></template>
+    </category>
+
+    <category>
+        <pattern>2</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_UX</srai></template>
+    </category>
+
+    <category>
+        <pattern>3</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_DATA</srai></template>
+    </category>
+
+    <category>
+        <pattern>4</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_SECURITY</srai></template>
+    </category>
+
+    <category>
+        <pattern>5</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_DATABASE</srai></template>
+    </category>
+
+    <!-- Additional yes/no handlers for career details -->
+    <category>
+        <pattern>Y</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
+        <template>
+            Which career would you like to learn more about?
+            
+            1. Software Engineer
+            2. UX Designer
+            3. Data Scientist
+            4. Security Analyst
+            5. Database Administrator
+            
+            (Enter 1-5 or type 'bye' to exit)
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
+        <template>
+            Which career would you like to learn more about?
+            
+            1. Software Engineer
+            2. UX Designer
+            3. Data Scientist
+            4. Security Analyst
+            5. Database Administrator
+            
+            (Enter 1-5 or type 'bye' to exit)
+        </template>
+    </category>
+
+    <category>
+        <pattern>N</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
+        <template>Thanks for chatting! Good luck with your career planning!</template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
+        <template>Thanks for chatting! Good luck with your career planning!</template>
+    </category>
+
+    <!-- Exit handlers -->
     <category>
         <pattern>BYE</pattern>
         <template>Thanks for chatting! Good luck with your career planning!</template>
@@ -61,4 +132,11 @@
         <pattern>QUIT</pattern>
         <template><srai>BYE</srai></template>
     </category>
+
+    <!-- Default catch-all -->
+    <category>
+        <pattern>*</pattern>
+        <template>To start your career guidance session, please type 'START'.</template>
+    </category>
+
 </aiml>
