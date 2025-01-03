@@ -1,373 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <!-- Auto-display welcome message on connect -->
+    <!-- Bot initialization -->
     <category>
-        <pattern>CONNECT</pattern>
-        <template>👋 Welcome to CS Career Explorer! 
-
-I'm Chip, your friendly computer science career advisor. I can help you discover exciting career paths in tech based on your interests and strengths.
-
-Just type anything to start exploring, or type 'options' to see what I can do!</template>
-    </category>
-
-    <!-- Initial Greetings -->
-    <category>
-        <pattern>HELLO</pattern>
-        <template>Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options?</template>
-    </category>
-
-    <!-- Greeting variations -->
-    <category>
-        <pattern>HI</pattern>
-        <template><srai>HELLO</srai></template>
+        <pattern>*</pattern>
+        <template>
+            To start your career guidance session, please type 'START'.
+        </template>
     </category>
 
     <category>
-        <pattern>HEY</pattern>
-        <template><srai>HELLO</srai></template>
+        <pattern>START</pattern>
+        <template>
+            Hi! I'm Chip, your computer science career advisor. I can help you explore different CS career paths based on your interests and strengths. Would you like to learn about CS career options? (y/n)
+            <think>
+                <set name="state">intro</set>
+                <set name="software">0</set>
+                <set name="ux">0</set>
+                <set name="data">0</set>
+                <set name="security">0</set>
+                <set name="database">0</set>
+            </think>
+        </template>
     </category>
 
     <category>
-        <pattern>YO</pattern>
-        <template><srai>HELLO</srai></template>
+        <pattern>Y</pattern>
+        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <template><srai>QUESTION1</srai></template>
     </category>
 
-    <category>
-        <pattern>HOLA</pattern>
-        <template><srai>HELLO</srai></template>
-    </category>
-
-    <category>
-        <pattern>SUP</pattern>
-        <template><srai>HELLO</srai></template>
-    </category>
-
-    <!-- Initial question responses -->
     <category>
         <pattern>YES</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template>Great! Let's start by understanding your work style. Which statement do you most identify with?
-
-1. "I prefer following established processes and enjoy building things step by step"
-2. "I'm detail-oriented and find satisfaction in discovering patterns others might miss"
-3. "I often notice design flaws in everyday things and think about how to improve them"
-4. "I like following rules and ensuring everything is done properly and securely"
-5. "I enjoy exploring new concepts and pushing boundaries in my work"
-
-Just type the number of the statement that best describes you!</template>
-    </category>
-
-    <!-- YES variations -->
-    <category>
-        <pattern>YEAH</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>YES</srai></template>
+        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <template><srai>QUESTION1</srai></template>
     </category>
 
     <category>
-        <pattern>YEP</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>YES</srai></template>
+        <pattern>N</pattern>
+        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
-    <category>
-        <pattern>SURE</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>YES</srai></template>
-    </category>
-
-    <category>
-        <pattern>OK</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>YES</srai></template>
-    </category>
-
-    <category>
-        <pattern>OKAY</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>YES</srai></template>
-    </category>
-
-    <!-- NO variations -->
     <category>
         <pattern>NO</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template>Well, I guess you're not a bit interested in tech careers! 😄 But hey, if you change your mind and want to escape the life of a digital nomad, just say 'hi' to start over. Who knows, maybe you'll find your inner geek!</template>
-    </category>
-
-    <category>
-        <pattern>NAH</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>NO</srai></template>
-    </category>
-
-    <category>
-        <pattern>NOPE</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>NO</srai></template>
-    </category>
-
-    <!-- MAYBE variations -->
-    <category>
-        <pattern>MAYBE</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template>Ah, sitting on the fence, are we? As a computer would say: there are 10 types of people in the world - those who can decide, and those who are still buffering! 😄 When you're done loading, just say 'hi' to explore your tech destiny!</template>
-    </category>
-
-    <category>
-        <pattern>NOT SURE</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>MAYBE</srai></template>
-    </category>
-
-    <category>
-        <pattern>I DON T KNOW</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>MAYBE</srai></template>
-    </category>
-
-    <category>
-        <pattern>IDK</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>MAYBE</srai></template>
-    </category>
-
-    <category>
-        <pattern>POSSIBLY</pattern>
-        <that>Would you like to learn about CS career options</that>
-        <template><srai>MAYBE</srai></template>
-    </category>
-
-    <!-- Help-related responses -->
-    <category>
-        <pattern>HELP</pattern>
-        <template>I'm here to help you explore CS career paths! Just say 'hi' to start over, or type 'options' to see what I can do.</template>
-    </category>
-
-    <category>
-        <pattern>OPTIONS</pattern>
-        <template>Here's what you can do:
-- Say 'hi' to start exploring CS careers
-- Type 'back' to return to the main menu
-- Type 'bye' to end our chat
-- Type 'help' to see these options again
-What would you like to do?</template>
-    </category>
-
-    <!-- Invalid number handling -->
-    <category>
-        <pattern>16</pattern>
-        <template>Oops! That number isn't in my database. Please choose a number from the options I've shown, or type 'back' to see the main menu again.</template>
-    </category>
-
-    <category>
-        <pattern>0</pattern>
-        <template>Let's start counting from 1! Please choose a number from the options I've shown, or type 'back' to see the main menu again.</template>
-    </category>
-
-    <!-- Frustrated user handling -->
-    <category>
-        <pattern>THIS IS STUPID</pattern>
-        <template>I understand this might be frustrating. Would you like to start over with 'hi', or should we say 'bye' for now?</template>
-    </category>
-
-    <category>
-        <pattern>THIS SUCKS</pattern>
-        <template><srai>THIS IS STUPID</srai></template>
-    </category>
-
-    <!-- First level selections (1-5) -->
-    <category>
-        <pattern>1</pattern>
-        <template>Perfect! For someone who likes working with established technologies, there are two excellent paths. Which interests you more?
-
-A. "Creating applications and solving complex programming challenges"
-B. "Automating deployment processes and managing development infrastructure"
-
-Type A or B to learn more about the matching career!</template>
-    </category>
-
-    <category>
-        <pattern>2</pattern>
-        <template>Excellent! For someone who enjoys working with data, there are two exciting paths. Which interests you more?
-
-A. "Using advanced statistical methods to find deep insights"
-B. "Translating data into actionable business strategies"
-
-Type A or B to learn more about the matching career!</template>
-    </category>
-
-    <category>
-        <pattern>3</pattern>
-        <template>Great choice! For someone passionate about user experience, there are two valuable paths. Which interests you more?
-
-A. "Creating intuitive, user-friendly experiences"
-B. "Building polished, responsive interfaces"
-
-Type A or B to learn more about the matching career!</template>
-    </category>
-
-    <category>
-        <pattern>4</pattern>
-        <template>Perfect! For someone who's detail-oriented and methodical, there are two important paths. Which interests you more?
-
-A. "Managing and maintaining critical systems"
-B. "Protecting against and responding to security threats"
-
-Type A or B to learn more about the matching career!</template>
-    </category>
-
-    <category>
-        <pattern>5</pattern>
-        <template>Exciting! For someone interested in cutting-edge technology, there are two innovative paths. Which interests you more?
-
-A. "Building and training AI systems to solve complex problems"
-B. "Developing intelligent algorithms and neural network architectures"
-
-Type A or B to learn more about the matching career!</template>
-    </category>
-
-    <!-- Career Recommendations -->
-    <category>
-        <pattern>A</pattern>
-        <that>Type A or B to learn more about the matching career</that>
-        <template><think><set name="choice"><thatstar/></set></think>
-        <condition name="choice">
-            <li value="1">A Software Engineer creates computer applications, writing and testing code to ensure functionality.
-
-Key skills needed:
-- Strong programming fundamentals
-- Problem-solving abilities
-- Knowledge of software design patterns
-- Testing and debugging expertise
-
-Average salary range: $70,000 - $120,000</li>
-            <li value="2">A Data Scientist analyzes complex data sets to help organizations make better decisions.
-
-Key skills needed:
-- Statistical analysis
-- Machine learning
-- Python/R programming
-- Data visualization
-- SQL
-
-Average salary range: $85,000 - $150,000</li>
-            <li value="3">A UX Developer combines design principles with technical skills to create user-friendly interfaces.
-
-Key skills needed:
-- UI/UX design principles
-- User research methods
-- Prototyping tools
-- HTML/CSS/JavaScript
-- Accessibility knowledge
-
-Average salary range: $75,000 - $125,000</li>
-            <li value="4">A Systems Administrator manages and maintains computer systems and networks.
-
-Key skills needed:
-- Network administration
-- Operating systems expertise
-- Security fundamentals
-- Troubleshooting skills
-- Automation capabilities
-
-Average salary range: $60,000 - $110,000</li>
-            <li value="5">A Machine Learning Engineer develops AI systems that can learn and improve from experience.
-
-Key skills needed:
-- Machine learning frameworks
-- Python programming
-- Data processing
-- Model deployment
-- Performance optimization
-
-Average salary range: $100,000 - $170,000</li>
-        </condition>
-
-Type 'back' to explore other paths or 'bye' to end chat</template>
-    </category>
-
-    <category>
-        <pattern>B</pattern>
-        <that>Type A or B to learn more about the matching career</that>
-        <template><think><set name="choice"><thatstar/></set></think>
-        <condition name="choice">
-            <li value="1">A DevOps Engineer automates deployment processes and manages development infrastructure.
-
-Key skills needed:
-- Cloud platforms (AWS, Azure)
-- Container technologies
-- Infrastructure as Code
-- Automation tools
-- Scripting languages
-
-Average salary range: $80,000 - $140,000</li>
-            <li value="2">A Business Intelligence Analyst transforms data into insights that drive business strategy.
-
-Key skills needed:
-- SQL and databases
-- BI tools (Tableau, Power BI)
-- Business acumen
-- Data analysis
-- Communication skills
-
-Average salary range: $65,000 - $110,000</li>
-            <li value="3">A Frontend Engineer specializes in creating the user interface and experience of websites and applications.
-
-Key skills needed:
-- HTML/CSS/JavaScript
-- Frontend frameworks
-- Responsive design
-- Performance optimization
-- Browser compatibility
-
-Average salary range: $75,000 - $130,000</li>
-            <li value="4">A Security Engineer protects systems and networks from cyber threats and vulnerabilities.
-
-Key skills needed:
-- Network security
-- Security protocols
-- Penetration testing
-- Incident response
-- Risk assessment
-
-Average salary range: $90,000 - $160,000</li>
-            <li value="5">An AI Algorithm Engineer develops new algorithms and optimizes AI architectures.
-
-Key skills needed:
-- Advanced AI concepts
-- Algorithm design
-- Mathematics/Statistics
-- Performance optimization
-- Research skills
-
-Average salary range: $110,000 - $180,000</li>
-        </condition>
-
-Type 'back' to explore other paths or 'bye' to end chat</template>
-    </category>
-
-    <!-- Navigation Keywords -->
-    <category>
-        <pattern>BACK</pattern>
-        <template>Let's start by understanding your work style. Which statement do you most identify with?
-
-1. "I like working with established technologies and clear documentation"
-2. "I enjoy finding patterns and drawing insights from information"
-3. "I'm passionate about making technology accessible and user-friendly"
-4. "I'm methodical and detail-oriented in protecting systems"
-5. "I like being on the cutting edge of technological innovation"</template>
+        <that>WOULD YOU LIKE TO LEARN ABOUT CS CAREER OPTIONS</that>
+        <template>Thanks for stopping by! Feel free to come back anytime.</template>
     </category>
 
     <category>
         <pattern>BYE</pattern>
-        <template>Thanks for chatting! Feel free to come back if you need more career guidance. Goodbye!</template>
-    </category>
-
-    <!-- Add variations of bye -->
-    <category>
-        <pattern>GOODBYE</pattern>
-        <template><srai>BYE</srai></template>
+        <template>Thanks for chatting! Good luck with your career planning!</template>
     </category>
 
     <category>
@@ -379,11 +61,4 @@ Type 'back' to explore other paths or 'bye' to end chat</template>
         <pattern>QUIT</pattern>
         <template><srai>BYE</srai></template>
     </category>
-
-    <!-- Default category -->
-    <category>
-        <pattern>*</pattern>
-        <template>I'm not sure how to respond to that. Please try saying "hi" to start over.</template>
-    </category>
-
 </aiml>

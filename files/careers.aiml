@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>CALCULATE_RESULTS</pattern>
+        <template>
+            Based on your responses, here's how you align with different CS careers:
+
+            Software Engineer - <get name="software"/>% Match
+            UX Designer - <get name="ux"/>% Match
+            Data Scientist - <get name="data"/>% Match
+            Cybersecurity Analyst - <get name="security"/>% Match
+            Database Administrator - <get name="database"/>% Match
+
+            Would you like to learn more about these career options? (y/n)
+        </template>
+    </category>
+
+    <category>
+        <pattern>Y</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE ABOUT THESE CAREER OPTIONS</that>
+        <template>
+            Which career would you like to learn more about?
+            
+            1. Software Engineer
+            2. UX Designer
+            3. Data Scientist
+            4. Security Analyst
+            5. Database Administrator
+            
+            (Enter 1-5 or type 'bye' to exit)
+        </template>
+    </category>
+
+    <category>
+        <pattern>1</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_SOFTWARE</srai></template>
+    </category>
+
+    <category>
+        <pattern>2</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_UX</srai></template>
+    </category>
+
+    <category>
+        <pattern>3</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_DATA</srai></template>
+    </category>
+
+    <category>
+        <pattern>4</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_SECURITY</srai></template>
+    </category>
+
+    <category>
+        <pattern>5</pattern>
+        <that>ENTER 1 5 OR TYPE BYE TO EXIT</that>
+        <template><srai>SHOW_DATABASE</srai></template>
+    </category>
+
+    <!-- Career Details with Follow-up Questions -->
+    <category>
+        <pattern>SHOW_SOFTWARE</pattern>
+        <template>
+            Software Engineer Career Details:
+            • Core responsibilities: Develop and maintain computer programs, applications, and systems
+            • Required skills: Programming languages (Java, Python, etc.), problem-solving, team collaboration
+            • Education: Bachelor's in Computer Science, Software Engineering, or related field
+            • Career path: Junior Developer → Senior Developer → Technical Lead → Software Architect
+            • Average Salary: $132,270
+
+            Would you like to learn more about other career options? (y/n)
+        </template>
+    </category>
+
+    <!-- Similar patterns for other careers -->
+    <category>
+        <pattern>Y</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
+        <template>
+            Which career would you like to learn more about?
+            
+            1. Software Engineer
+            2. UX Designer
+            3. Data Scientist
+            4. Security Analyst
+            5. Database Administrator
+            
+            (Enter 1-5 or type 'bye' to exit)
+        </template>
+    </category>
+
+    <category>
+        <pattern>N</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS</that>
+        <template>
+            Thanks for chatting! Good luck with your career planning!
+        </template>
+    </category>
+</aiml>
