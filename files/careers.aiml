@@ -19,13 +19,13 @@
             Cybersecurity Analyst - <get name="securityscore"/>% Match.
             Database Administrator - <get name="databasescore"/>% Match.
             
-            If you would like to learn more about these career options type 'yes' or type 'no' to exit. 
+            If you would like to learn more about the career options type 'yes' or type 'no' to exit. 
         </template>
     </category>
 
     <category>
         <pattern>YES</pattern>
-        <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT THESE CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
+        <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT THE CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
         <template>
             Which career would you like to learn more about?
             
@@ -153,15 +153,7 @@
         <pattern>YES</pattern>
         <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
         <template>
-            Which career would you like to learn more about?
-            
-            1. Software Engineer
-            2. UX Designer
-            3. Data Scientist
-            4. Security Analyst
-            5. Database Administrator
-            
-            (Enter 1-5 or type 'bye' to exit)
+           <srai>IF YOU WOULD LIKE TO LEARN MORE ABOUT THE CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</srai>
         </template>
     </category>
 
