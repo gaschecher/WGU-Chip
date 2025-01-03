@@ -73,13 +73,13 @@
         <pattern>SOFTWARE</pattern>
         <template>
             Software Engineer Career Details:
-            • Core responsibilities: Design, develop, and maintain software applications and systems
-            • Required skills: Programming languages (Java, Python, etc.), problem-solving, system design
-            • Average salary range: $70,000 - $150,000+ depending on experience and location
-            • Education needed: BS in Computer Science or related field
-            • Career progression: Junior Developer → Senior Developer → Tech Lead → Software Architect
-            • Key tools: Git, IDEs, testing frameworks, CI/CD tools
-            • Industry demand: High growth with continuous opportunities
+            • Core responsibilities: Design, develop, and maintain software applications and systems.
+            • Required skills: Programming languages (Java, Python, etc.), problem-solving, system design.
+            • Average salary range: $70,000 - $150,000+ depending on experience and location.
+            • Education needed: BS in Computer Science or related field.
+            • Career progression: Junior Developer → Senior Developer → Tech Lead → Software Architect.
+            • Key tools: Git, IDEs, testing frameworks, CI/CD tools.
+            • Industry demand: High growth with continuous opportunities.
             
             If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
@@ -89,13 +89,13 @@
         <pattern>UX</pattern>
         <template>
             UX Designer Career Details:
-            • Core responsibilities: Design user interfaces and improve user experience
-            • Required skills: UI/UX design principles, wireframing, user research
-            • Average salary range: $65,000 - $130,000+ depending on experience and location
-            • Education needed: BS in Design, HCI, or related field
-            • Career progression: Junior Designer → Senior Designer → UX Lead → Design Director
-            • Key tools: Figma, Sketch, Adobe XD, prototyping tools
-            • Industry focus: Creating intuitive and accessible digital experiences
+            • Core responsibilities: Design user interfaces and improve user experience.
+            • Required skills: UI/UX design principles, wireframing, user research.
+            • Average salary range: $65,000 - $130,000+ depending on experience and location.
+            • Education needed: BS in Design, HCI, or related field.
+            • Career progression: Junior Designer → Senior Designer → UX Lead → Design Director.
+            • Key tools: Figma, Sketch, Adobe XD, prototyping tools.
+            • Industry focus: Creating intuitive and accessible digital experiences.
             
             If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
@@ -105,13 +105,13 @@
         <pattern>DATA</pattern>
         <template>
             Data Scientist Career Details:
-            • Core responsibilities: Analyze data, build models, extract insights
-            • Required skills: Statistics, machine learning, Python/R, data visualization
-            • Average salary range: $85,000 - $165,000+ depending on experience and location
-            • Education needed: BS/MS in Data Science, Statistics, or related field
-            • Career progression: Junior Data Scientist → Senior Data Scientist → Lead Data Scientist → Chief Data Scientist
-            • Key tools: Python, R, SQL, Jupyter, TensorFlow
-            • Industry impact: Driving data-informed decision making
+            • Core responsibilities: Analyze data, build models, extract insights.
+            • Required skills: Statistics, machine learning, Python/R, data visualization.
+            • Average salary range: $85,000 - $165,000+ depending on experience and location.
+            • Education needed: BS/MS in Data Science, Statistics, or related field.
+            • Career progression: Junior Data Scientist → Senior Data Scientist → Lead Data Scientist → Chief Data Scientist.
+            • Key tools: Python, R, SQL, Jupyter, TensorFlow.
+            • Industry impact: Driving data-informed decision making.
             
             If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
@@ -121,13 +121,13 @@
         <pattern>SECURITY</pattern>
         <template>
             Cybersecurity Analyst Career Details:
-            • Core responsibilities: Protect systems, monitor security, respond to incidents
-            • Required skills: Network security, threat analysis, security tools
-            • Average salary range: $75,000 - $145,000+ depending on experience and location
-            • Education needed: BS in Cybersecurity or related field
-            • Career progression: Security Analyst → Senior Analyst → Security Engineer → CISO
-            • Key tools: Security information and event management (SIEM) tools, penetration testing tools
-            • Industry focus: Protecting organizations from cyber threats
+            • Core responsibilities: Protect systems, monitor security, respond to incidents.
+            • Required skills: Network security, threat analysis, security tools.
+            • Average salary range: $75,000 - $145,000+ depending on experience and location.
+            • Education needed: BS in Cybersecurity or related field.
+            • Career progression: Security Analyst → Senior Analyst → Security Engineer → CISO.
+            • Key tools: Security information and event management (SIEM) tools, penetration testing tools.
+            • Industry focus: Protecting organizations from cyber threats.
             
             If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
@@ -137,13 +137,13 @@
         <pattern>DATABASE</pattern>
         <template>
             Database Administrator Career Details:
-            • Core responsibilities: Manage databases, ensure data integrity and availability
-            • Required skills: SQL, database management systems, backup and recovery
-            • Average salary range: $70,000 - $140,000+ depending on experience and location
-            • Education needed: BS in Computer Science or related field
-            • Career progression: Junior DBA → Senior DBA → Database Architect → Data Infrastructure Manager
-            • Key tools: Oracle, MySQL, PostgreSQL, MongoDB
-            • Industry focus: Managing and optimizing data storage systems
+            • Core responsibilities: Manage databases, ensure data integrity and availability.
+            • Required skills: SQL, database management systems, backup and recovery.
+            • Average salary range: $70,000 - $140,000+ depending on experience and location.
+            • Education needed: BS in Computer Science or related field.
+            • Career progression: Junior DBA → Senior DBA → Database Architect → Data Infrastructure Manager.
+            • Key tools: Oracle, MySQL, PostgreSQL, MongoDB.
+            • Industry focus: Managing and optimizing data storage systems.
             
             If you would like to learn more about other career options type 'yes' or type 'no' to exit.
         </template>
