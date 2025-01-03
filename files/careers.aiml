@@ -153,7 +153,15 @@
     <pattern>YES</pattern>
     <that>IF YOU WOULD LIKE TO LEARN MORE ABOUT OTHER CAREER OPTIONS TYPE YES OR TYPE NO TO EXIT</that>
     <template>
-        <srai>YES</srai>
+        Which career would you like to learn more about?
+            
+        1. Software Engineer.
+        2. UX Designer.
+        3. Data Scientist.
+        4. Security Analyst.
+        5. Database Administrator.
+            
+        Enter the number that corresponds to the career you would like to see or type 'bye' to exit.
     </template>
 </category>
 
