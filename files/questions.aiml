@@ -4,13 +4,13 @@
     <category>
         <pattern>QUESTION1</pattern>
         <template>
-            When faced with a problem, what's your preferred approach?
+            Question 1/5: When faced with a problem, what's your preferred approach?
             a) I break down complex problems and solve them systematically.
             b) I focus on understanding how users think and behave.
             c) I enjoy analyzing patterns and drawing conclusions.
             d) I'm always looking for potential risks and vulnerabilities.
             e) I like creating organized, structured solutions.
-            Select your answer for Question 1:
+            Select your answer for Question 1.
             <think><set name="state">q1</set></think>
         </template>
     </category>
@@ -79,13 +79,13 @@
     <category>
         <pattern>QUESTION2</pattern>
         <template>
-            In a team project, which role do you naturally take?
+            Question 2/5: In a team project, which role do you naturally take?
             a) The technical problem solver
             b) The user advocate and experience designer
             c) The data analyst and insights provider
             d) The security-minded guardian
             e) The organized system coordinator
-            Select your answer for Question 2:
+            Select your answer for Question 2.
             <think><set name="state">q2</set></think>
         </template>
     </category>
@@ -152,13 +152,13 @@
     <category>
         <pattern>QUESTION3</pattern>
         <template>
-            What aspect of technology interests you most?
+            Question 3/5: What aspect of technology interests you most?
             a) Building new applications and solutions
             b) Making technology more user-friendly
             c) Finding insights in complex data
             d) Protecting systems from threats
             e) Managing and organizing data systems
-            Select your answer for Question 3:
+            Select your answer for Question 3.
             <think><set name="state">q3</set></think>
         </template>
     </category>
@@ -223,13 +223,13 @@
     <category>
         <pattern>QUESTION4</pattern>
         <template>
-            How do you handle workplace challenges?
+            Question 4/5: How do you handle workplace challenges?
             a) Break them down into manageable pieces
             b) Gather feedback and iterate on solutions
             c) Analyze data to find root causes
             d) Stay vigilant and prepare for issues
             e) Maintain clear processes and organization
-            Select your answer for Question 4:
+            Select your answer for Question 4.
             <think><set name="state">q4</set></think>
         </template>
     </category>
@@ -296,13 +296,13 @@
     <category>
         <pattern>QUESTION5</pattern>
         <template>
-            What achievement would make you most proud?
+            Question 5/5: What achievement would make you most proud?
             a) Building efficient, scalable solutions
             b) Greatly improving user experience
             c) Discovering valuable insights from data
             d) Preventing security breaches
             e) Creating reliable data systems
-            Select your answer for Question 5:
+            Select your answer for Question 5.
             <think><set name="state">q5</set></think>
         </template>
     </category>
