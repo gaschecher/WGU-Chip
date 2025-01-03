@@ -363,34 +363,4 @@
         </template>
     </category>
 
-    <!-- General answer pattern catch-all -->
-    <category>
-        <pattern>_</pattern>
-        <that>SELECT YOUR ANSWER FOR QUESTION 1</that>
-        <template>Please select a valid option (a, b, c, d, or e)</template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>SELECT YOUR ANSWER FOR QUESTION 2</that>
-        <template>Please select a valid option (a, b, c, d, or e)</template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>SELECT YOUR ANSWER FOR QUESTION 3</that>
-        <template>Please select a valid option (a, b, c, d, or e)</template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>SELECT YOUR ANSWER FOR QUESTION 4</that>
-        <template>Please select a valid option (a, b, c, d, or e)</template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>SELECT YOUR ANSWER FOR QUESTION 5</that>
-        <template>Please select a valid option (a, b, c, d, or e)</template>
-    </category>
 </aiml>
